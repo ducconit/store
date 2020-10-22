@@ -1,0 +1,139 @@
+/* Material Design Icons*/
+
+@import url('https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css');
+
+/* Font Awesome */
+@import url('https://pro.fontawesome.com/releases/v5.15.0/css/all.css');
+
+/* Themify Icons*/
+
+@import url('https://cdn.jsdelivr.net/npm/lt-themify-icons@1.1.0/themify-icons.css');
+
+/* simple line icons*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css');
+
+/* Weather Icons*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css');
+
+/* Flag Icons */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css');
+
+@import "bootstrap";
+
+
+.bg-theme {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s;
+    background-image: url('/admin/images/bg-themes/2.png');
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-theme1 {
+    background-image: url('/admin/images/bg-themes/2.png') !important;
+}
+
+.bg-theme2 {
+    background-image: url('/admin/images/bg-themes/3.png') !important;
+}
+
+.bg-theme3 {
+    background-image: url('/admin/images/bg-themes/4.png') !important;
+}
+
+.bg-theme4 {
+    background-image: url('/admin/images/bg-themes/5.png') !important;
+}
+
+.bg-theme5 {
+    background-image: url('/admin/images/bg-themes/6.png') !important;
+}
+
+.toggle-menu {
+    margin-left: 250px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.12);
+    text-align: center;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 11px;
+}
+
+.simplebar-scroll-content {
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+    min-width: 100% !important;
+    max-height: inherit !important;
+    box-sizing: content-box !important;
+
+    & > .simplebar-content {
+        padding-bottom: 17px;
+        margin-right: -17px;
+    }
+}
+
+.brand-logo {
+    width: 250px;
+    height: 60px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+    background-color: rgba(0, 0, 0, .2);
+    transition: all 0.2s ease;
+}
+
+.logo-icon {
+    width: 35px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    line-height: 0;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.close-btn {
+    margin-left: 16px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-label {
+    padding: 20px 15px 5px 5px;
+    color: #b0afaf;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,37 @@
+/*
+Template Name: Dashtreme Admin
+Author: CODERVENT
+Email: codervent@gmail.com
+File: app-style
+*/
+
+
+/* Material Design Icons*/
+
+@import url('https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css');
+
+/* Font Awesome */
+@import url('https://pro.fontawesome.com/releases/v5.15.0/css/all.css');
+
+/* Themify Icons*/
+
+@import url('https://cdn.jsdelivr.net/npm/lt-themify-icons@1.1.0/themify-icons.css');
+
+
+
+
+
+
+/* simple line icons*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css');
+
+
+
+/* Weather Icons*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css');
+
+
+/* Flag Icons */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css');
