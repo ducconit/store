@@ -174,12 +174,4 @@ export default {
 </script>
 
 <style lang="scss">
-.topbar-nav .navbar {
-    padding: 0px 25px;
-    z-index: 999;
-    height: 60px;
-    background-color: rgba(0,0,0,.2);
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 </style>
