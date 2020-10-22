@@ -691,48 +691,39 @@ pre code {
 }
 
 .col-12 {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%
 }
 
 .order-first {
-    -ms-flex-order: -1;
     order: -1
 }
 
 .order-last {
-    -ms-flex-order: 13;
     order: 13
 }
 
 .order-0 {
-    -ms-flex-order: 0;
     order: 0
 }
 
 .order-1 {
-    -ms-flex-order: 1;
     order: 1
 }
 
 .order-2 {
-    -ms-flex-order: 2;
     order: 2
 }
 
 .order-3 {
-    -ms-flex-order: 3;
     order: 3
 }
 
 .order-4 {
-    -ms-flex-order: 4;
     order: 4
 }
 
 .order-5 {
-    -ms-flex-order: 5;
     order: 5
 }
 
@@ -10318,7 +10309,6 @@ body.bg-theme15 {
     z-index: 999;
     height: 60px;
     background-color: rgba(0, 0, 0, .2);
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -10334,9 +10324,6 @@ body.bg-theme15 {
     border-radius: 0;
     background: rgba(255, 255, 255, 0.12);
     text-align: center;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -10350,7 +10337,6 @@ body.bg-theme15 {
 /* Dropdown Menu */
 .dropdown-menu {
     border: 0px solid rgba(0, 0, 0, .15);
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
     font-size: 15px;
     background-color: #000;
@@ -10436,9 +10422,6 @@ body.bg-theme15 {
     height: 55px;
     border-radius: 4%;
     border: 2px solid #ffffff;
-    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -10497,9 +10480,6 @@ body.bg-theme15 {
     top: 0;
     z-index: 1111;
     background-color: rgba(0, 0, 0, .2);
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -10511,9 +10491,6 @@ body.bg-theme15 {
     margin: 0;
     line-height: 0;
     margin-left: 10px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -10560,7 +10537,6 @@ body.bg-theme15 {
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 0 30px !important;
     border-radius: 0px;
-    /* height: calc(1.3em + .75rem + 2px); */
 }
 
 .search-bar .btn-search i {
@@ -10692,7 +10668,6 @@ body.bg-theme15 {
     left: 15%;
     max-width: 75px;
     border: 3px solid rgba(255, 255, 255, 1);
-    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 }
 
@@ -11816,10 +11791,6 @@ body.bg-theme15 {
     text-align: center;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
     border-radius: .25rem;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
     transition: all .3s;
 
 }
@@ -13036,7 +13007,6 @@ table.grid td {
 
 /* Paginations */
 .pagination {
-    display: -ms-flexbox;
     display: flex;
     padding-left: 0;
     list-style: none;
@@ -13529,9 +13499,7 @@ table.grid td {
 
 /* List Groups */
 .list-group {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
@@ -13959,7 +13927,6 @@ table.grid td {
 /* Progress Bars */
 
 .progress {
-    display: -ms-flexbox;
     display: flex;
     height: .5rem;
     overflow: hidden;
@@ -13970,11 +13937,8 @@ table.grid td {
 }
 
 .progress-bar {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
     text-align: center;
@@ -14884,15 +14848,11 @@ table.grid td {
     background-color: #787878;
     border-radius: 50%;
     appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
     display: block;
     width: 22px;
     height: 22px;
     outline: none;
     transform: scale(2);
-    -ms-transform: scale(2);
     transition: opacity 0.3s, transform 0.3s;
 }
 
@@ -14907,7 +14867,6 @@ table.grid td {
     pointer-events: none;
     cursor: default;
     filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
     box-shadow: none;
     opacity: .65;
 }
