@@ -2,25 +2,36 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//    return Inertia\Inertia::render('Dashboard');
+//})->name('dashboard');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*==========MAIN WEB==============*/
+Route::get('/','HomeController@index')->name('index');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia\Inertia::render('Dashboard');
-})->name('dashboard');
 
+//product
+Route::resource('product','ProductController');
+
+
+
+
+
+
+//pages
+Route::get('/about',function (){
+    return inertia('About');
+})->name('about');
+Route::get('/contact',function (){
+    return inertia('Contact');
+})->name('contact');
+
+
+
+//Login and register
+Route::middleware('guest:customer')->get('login',function(){
+    return inertia('Login');
+})->name('login');
 
 
 /*============ADMIN DASHBOARD===========*/
@@ -31,3 +42,6 @@ Route::prefix(config('admin.prefix'))
     ->group( function () {
     require_once 'admin.php';
 });
+
+
+//composer require bumbummen99/shoppingcart

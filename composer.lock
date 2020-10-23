@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37cf905b9dc2ddb8bb6482d3bbf88a48",
+    "content-hash": "4d7febde26445111e5db7a7fe101f28f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1898,6 +1898,46 @@
                 }
             ],
             "time": "2020-07-23T08:41:23+00:00"
+        },
+        {
+            "name": "mung9thang12/permission",
+            "version": "v13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mung9thang12/permission.git",
+                "reference": "6cd9e3ac040a7071e6a5e4968e0602420af003e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mung9thang12/permission/zipball/6cd9e3ac040a7071e6a5e4968e0602420af003e6",
+                "reference": "6cd9e3ac040a7071e6a5e4968e0602420af003e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mung9thang12\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mung9thang12\\Permission\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "mung9thang12",
+                    "email": "mung9thang12@gmail.com"
+                }
+            ],
+            "description": "laravel permission customize for spatie/laravel-permission",
+            "time": "2020-09-23T06:38:17+00:00"
         },
         {
             "name": "nesbot/carbon",
