@@ -69,19 +69,19 @@
                         <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
                             <div class="header-control">
                                 <div class="block-minicart teamo-mini-cart block-header teamo-dropdown">
-                                    <a href="javascript:void(0);" class="shopcart-icon" data-teamo="teamo-dropdown">
+                                    <a href="javascript:void(0);" @click="sho" class="shopcart-icon" data-teamo="teamo-dropdown">
                                         Cart
                                         <span class="count">
-										0
+										{{ $page.cartCount }}
 										</span>
                                     </a>
                                     <div class="shopcart-description teamo-submenu">
                                         <div class="content-wrap">
                                             <h3 class="title">Shopping Cart</h3>
-                                            <ul class="minicart-items mCustomScrollbar _mCS_1"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 250px;"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
-                                                <li class="product-cart mini_cart_item">
+                                            <ul class="minicart-items">
+                                                <li v-for="cart in $page.carts" class="product-cart mini_cart_item">
                                                     <a href="#" class="product-media">
-                                                        <img src="/images/item-minicart-1.jpg" alt="img" class="mCS_img_loaded">
+                                                        <img src="/images/item-minicart-1.jpg" alt="img">
                                                     </a>
                                                     <div class="product-details">
                                                         <h5 class="product-name">
@@ -109,82 +109,22 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="product-cart mini_cart_item">
-                                                    <a href="#" class="product-media">
-                                                        <img src="/images/item-minicart-2.jpg" alt="img" class="mCS_img_loaded">
-                                                    </a>
-                                                    <div class="product-details">
-                                                        <h5 class="product-name">
-                                                            <a href="#">Soap Ferns Solutions</a>
-                                                        </h5>
-                                                        <div class="variations">
-															<span class="attribute_color">
-																<a href="#">Black</a>
-															</span>
-                                                            ,
-                                                            <span class="attribute_size">
-																<a href="#">300ml</a>
-															</span>
-                                                        </div>
-                                                        <span class="product-price">
-															<span class="price">
-																<span>$45</span>
-															</span>
-														</span>
-                                                        <span class="product-quantity">
-															(x1)
-														</span>
-                                                        <div class="product-remove">
-                                                            <a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="product-cart mini_cart_item">
-                                                    <a href="#" class="product-media">
-                                                        <img src="/images/item-minicart-3.jpg" alt="img" class="mCS_img_loaded">
-                                                    </a>
-                                                    <div class="product-details">
-                                                        <h5 class="product-name">
-                                                            <a href="#">Ferns Solutions Soap</a>
-                                                        </h5>
-                                                        <div class="variations">
-															<span class="attribute_color">
-																<a href="#">Black</a>
-															</span>
-                                                            ,
-                                                            <span class="attribute_size">
-																<a href="#">300ml</a>
-															</span>
-                                                        </div>
-                                                        <span class="product-price">
-															<span class="price">
-																<span>$45</span>
-															</span>
-														</span>
-                                                        <span class="product-quantity">
-															(x1)
-														</span>
-                                                        <div class="product-remove">
-                                                            <a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 159px; max-height: 240px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></ul>
+                                            </ul>
                                             <div class="subtotal">
                                                 <span class="total-title">Subtotal: </span>
                                                 <span class="total-price">
 													<span class="Price-amount">
-														$135
+														{{  $page.priceTotal.toLocaleString() }}.000 VNĐ
 													</span>
 												</span>
                                             </div>
                                             <div class="actions">
-                                                <a class="button button-viewcart" href="shoppingcart.html">
+                                                <inertia-link class="button button-viewcart" :href="route('cart.index')">
                                                     <span>View Bag</span>
-                                                </a>
-                                                <a href="checkout.html" class="button button-checkout">
+                                                </inertia-link>
+                                                <inertia-link :href="route('cart.checkout')" class="button button-checkout">
                                                     <span>Checkout</span>
-                                                </a>
+                                                </inertia-link>
                                             </div>
                                         </div>
                                     </div>
@@ -267,48 +207,57 @@
                             </div>
                             <div class="block-content verticalmenu-content">
                                 <ul class="teamo-nav-vertical vertical-menu teamo-clone-mobile-menu">
-                                    <li class="menu-item">
-                                        <a href="#" class="teamo-menu-item-title" title="New Arrivals">New Arrivals</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a title="Hot Sale" href="#" class="teamo-menu-item-title">Hot Sale</a>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a title="Accessories" href="#" class="teamo-menu-item-title">Accessories</a>
-                                        <span class="toggle-submenu"></span>
-                                        <ul role="menu" class=" submenu">
-                                            <li class="menu-item">
-                                                <a title="Audio" href="#" class="teamo-item-title">Audio</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a title="Cacti" href="#" class="teamo-item-title">Cacti</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a title="New Arrivals" href="#" class="teamo-item-title">New Arrivals</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a title="Accessories" href="#" class="teamo-item-title">Accessories</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a title="Storage" href="#" class="teamo-item-title">Storage</a>
+                                    <li class="menu-item menu-item-has-children" v-show="$page.categories" v-for="category in $page.categories">
+                                        <inertia-link :href="route('category.show',category.slug)" class="teamo-menu-item-title" :title="category.name">{{  category.name }}</inertia-link>
+                                        <span v-if="category.children.length" class="toggle-submenu"></span>
+                                        <ul v-if="category.children.length" role="menu" class=" submenu">
+                                            <li class="menu-item" v-for="children in category.children">
+                                                <inertia-link title="child.name" :href="route('category.show',children.slug)" class="teamo-item-title">{{ children.name }}</inertia-link>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item">
-                                        <a title="Cacti" href="#" class="teamo-menu-item-title">Cacti</a>
+                                    <li class="menu-item text-center" v-if="!$page.categories.length">
+                                        Empty !
                                     </li>
-                                    <li class="menu-item">
-                                        <a title="Palms" href="#" class="teamo-menu-item-title">Palms</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a title="Ferns" href="#" class="teamo-menu-item-title">Ferns</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a title="Hanging plants" href="#" class="teamo-menu-item-title">Hanging plants</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a title="Variegated" href="#" class="teamo-menu-item-title">Variegated</a>
-                                    </li>
+<!--                                    <li class="menu-item">-->
+<!--                                        <a title="Hot Sale" href="#" class="teamo-menu-item-title">Hot Sale</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="menu-item menu-item-has-children">-->
+<!--                                        <a title="Accessories" href="#" class="teamo-menu-item-title">Accessories</a>-->
+<!--                                        <span class="toggle-submenu"></span>-->
+<!--                                        <ul role="menu" class=" submenu">-->
+<!--                                            <li class="menu-item">-->
+<!--                                                <a title="Audio" href="#" class="teamo-item-title">Audio</a>-->
+<!--                                            </li>-->
+<!--                                            <li class="menu-item">-->
+<!--                                                <a title="Cacti" href="#" class="teamo-item-title">Cacti</a>-->
+<!--                                            </li>-->
+<!--                                            <li class="menu-item">-->
+<!--                                                <a title="New Arrivals" href="#" class="teamo-item-title">New Arrivals</a>-->
+<!--                                            </li>-->
+<!--                                            <li class="menu-item">-->
+<!--                                                <a title="Accessories" href="#" class="teamo-item-title">Accessories</a>-->
+<!--                                            </li>-->
+<!--                                            <li class="menu-item">-->
+<!--                                                <a title="Storage" href="#" class="teamo-item-title">Storage</a>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </li>-->
+<!--                                    <li class="menu-item">-->
+<!--                                        <a title="Cacti" href="#" class="teamo-menu-item-title">Cacti</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="menu-item">-->
+<!--                                        <a title="Palms" href="#" class="teamo-menu-item-title">Palms</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="menu-item">-->
+<!--                                        <a title="Ferns" href="#" class="teamo-menu-item-title">Ferns</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="menu-item">-->
+<!--                                        <a title="Hanging plants" href="#" class="teamo-menu-item-title">Hanging plants</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="menu-item">-->
+<!--                                        <a title="Variegated" href="#" class="teamo-menu-item-title">Variegated</a>-->
+<!--                                    </li>-->
                                 </ul>
                             </div>
                         </div>
@@ -317,6 +266,7 @@
                                 <ul class="teamo-clone-mobile-menu teamo-nav main-menu " id="menu-main-menu">
                                     <li class="menu-item">
                                         <inertia-link :href="route('index')" class="teamo-menu-item-title" title="Home">Home</inertia-link>
+                                        <inertia-link :href="route('best-seller')" class="teamo-menu-item-title" title="Home">Best Seller</inertia-link>
                                         <!--                                    <span class="toggle-submenu"></span>-->
                                         <!--                                    <ul class="submenu">-->
                                         <!--                                        <li class="menu-item">-->
@@ -330,58 +280,58 @@
                                         <!--                                        </li>-->
                                         <!--                                    </ul>-->
                                     </li>
-                                    <li class="menu-item  menu-item-has-children item-megamenu">
-                                        <a href="#" class="teamo-menu-item-title" title="Pages">Pages</a>
-                                        <span class="toggle-submenu"></span>
-                                        <div class="submenu mega-menu menu-page" style="width: 1170px; left: -487.703px;">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
-                                                    <div class="teamo-custommenu default">
-                                                        <h2 class="widgettitle">Shop Pages</h2>
-                                                        <ul class="menu">
-                                                            <li class="menu-item">
-                                                                <a href="shoppingcart.html">Shopping Cart</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="checkout.html">Checkout</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="contact.html">Contact us</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="404page.html">404</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <inertia-link :href="route('login')">Login/Register</inertia-link>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
-                                                    <div class="teamo-custommenu default">
-                                                        <h2 class="widgettitle">Product</h2>
-                                                        <ul class="menu">
-                                                            <li class="menu-item">
-                                                                <a href="productdetails-fullwidth.html">Product Fullwidth</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="productdetails-leftsidebar.html">Product left
-                                                                    sidebar</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="productdetails-rightsidebar.html">Product right
-                                                                    sidebar</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
+<!--                                    <li class="menu-item  menu-item-has-children item-megamenu">-->
+<!--                                        <a href="#" class="teamo-menu-item-title" title="Pages">Pages</a>-->
+<!--                                        <span class="toggle-submenu"></span>-->
+<!--                                        <div class="submenu mega-menu menu-page" style="width: 1170px; left: -487.703px;">-->
+<!--                                            <div class="row">-->
+<!--                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">-->
+<!--                                                    <div class="teamo-custommenu default">-->
+<!--                                                        <h2 class="widgettitle">Shop Pages</h2>-->
+<!--                                                        <ul class="menu">-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="shoppingcart.html">Shopping Cart</a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="checkout.html">Checkout</a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="contact.html">Contact us</a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="404page.html">404</a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <inertia-link :href="route('login')">Login/Register</inertia-link>-->
+<!--                                                            </li>-->
+<!--                                                        </ul>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">-->
+<!--                                                    <div class="teamo-custommenu default">-->
+<!--                                                        <h2 class="widgettitle">Product</h2>-->
+<!--                                                        <ul class="menu">-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="productdetails-fullwidth.html">Product Fullwidth</a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="productdetails-leftsidebar.html">Product left-->
+<!--                                                                    sidebar</a>-->
+<!--                                                            </li>-->
+<!--                                                            <li class="menu-item">-->
+<!--                                                                <a href="productdetails-rightsidebar.html">Product right-->
+<!--                                                                    sidebar</a>-->
+<!--                                                            </li>-->
+<!--                                                        </ul>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
 <!--                                    <li class="menu-item  menu-item-has-children">-->
 <!--                                        <a href="inblog_right-siderbar.html" class="teamo-menu-item-title" title="Blogs">Blogs</a>-->
 <!--                                        <span class="toggle-submenu"></span>-->
@@ -434,12 +384,20 @@
 
 <script>
 export default {
-name: "Header"
+name: "Header",
+    methods:{
+    sho(){
+        console.log(this.$page.carts)
+    }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     .top-bar-left{
+        a:hover{
+            color: #fff;
+        }
         .facebook,.email{
             white-space: nowrap;
             max-width: 150px;

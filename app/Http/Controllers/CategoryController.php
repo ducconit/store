@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ImageProduct;
-use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -47,13 +46,9 @@ class ProductController extends Controller
      */
     public function show($slug)
     {
-        $product=Product::where('slug',$slug)->with('images','categories')->first();
-
-        if(!$product){
-            return abort(404);
-        }
-
-        return inertia('Product/Show')->with('product',$product);
+        $category = Category::where('slug',$slug)->first();
+        $products = $category->products;
+        return inertia('Category/Show')->with(['category'=>$category,'products'=>$products]);
     }
 
     /**

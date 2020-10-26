@@ -1897,7 +1897,7 @@ table tr:last-child td, table tr:last-child th {
 	color: #fff;
 	font-weight: 700;
 	font-size: 14px;
-	
+
 	opacity: 0;
 	visibility: hidden;
 	z-index: 1001;
@@ -2775,7 +2775,7 @@ blockquote .author .desc {
 	background-position: left center;
 	background-color: #ffffff;
 	background-size: cover;
-	
+
 }
 .kt-popup-newsletter.style-1 .image-newsletter {
 	width: 38.9610%;
@@ -3542,7 +3542,7 @@ blockquote .author .desc {
 }
 .breadcrumb a {
 	color: #888888;
-	
+
 }
 .breadcrumb > .active {
 	color: #222;
@@ -4117,6 +4117,8 @@ ul.list-products {
 	left: 0;
 	top: 0;
 	right: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .product-item .flash {
 	font-size: 12px;
@@ -4131,6 +4133,21 @@ ul.list-products {
 	text-align: center;
 	background-color: #65a15a;
 	color: #fff;
+	position: relative;
+}
+.product-item .sale {
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: capitalize;
+	display: inline-block;
+	float: left;
+	line-height: 20px;
+	height: 22px;
+	min-width: 44px;
+	padding: 0 5px;
+	text-align: center;
+	background-color: #d9cf58;
+	color: #db3737;
 	position: relative;
 }
 .product-item .yith-wcwl-add-to-wishlist > div a:before {
@@ -4844,7 +4861,7 @@ ul.list-products {
 .cart-form .shop_table .product-quantity .quantity {
 	display: block;
 	border: 1px solid #f1f1f1;
-	
+
 	padding: 0 6px;
 	width: 75px;
 	text-align: center;
@@ -5434,7 +5451,7 @@ ul.list-products {
 	text-align: center;
 	line-height: 38px;
 	z-index: 32;
-	
+
 }
 .btn-zoom.open_qv:hover {
 	color: #ffffff;
@@ -6100,7 +6117,7 @@ ul.list-products {
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 	padding-bottom: 15px;
 }
 .custommenu-title-blog::before {
@@ -6207,7 +6224,7 @@ ul.list-products {
 	font-size: 16px;
 	color: #333;
 	margin-bottom: 15px;
-	
+
 	font-weight: 600;
 	position: relative;
 	padding-bottom: 10px;
@@ -6257,7 +6274,7 @@ ul.list-products {
 	right: -40px;
 	z-index: 33;
 	background: #ffffff;
-	
+
 	opacity: 0;
 	visibility: hidden;
 }
@@ -6603,7 +6620,7 @@ ul.list-products {
 }
 .teamo-product.style2 .product-list-owl .slick-dots .slick-active {
 	background: #666666;
-	
+
 }
 .teamo-product.style2 .product-list-owl .slick-dots li:first-child {
 	border-bottom-left-radius: 5px;
@@ -7894,7 +7911,7 @@ body.vertical-menu-open .vertical-menu-overlay {
 	right: -20px;
 	z-index: 33;
 	background: #ffffff;
-	
+
 	opacity: 0;
 	visibility: hidden;
 }
@@ -8348,7 +8365,7 @@ body.vertical-menu-open .vertical-menu-overlay {
 	padding-top: 0;
 	padding-bottom: 0;
 	line-height: 39px;
-	
+
 	background: transparent;
 }
 .group-pinap .pinmap-buttom:hover .popup-pinmap, .group-pinap .pinmap-buttom:hover .popup-pinmap::before {
@@ -9831,7 +9848,7 @@ iframe {
 	/*==========home 06=========*/
 	.header.style6 {
 		padding: 30px;
-		
+
 	}
 	.header.style6 .logo {
 		padding-bottom: 0;
@@ -10086,7 +10103,7 @@ iframe {
 	/*popup newletter*/
 	.kt-popup-newsletter {
 		display: none;
-		
+
 	}
 	/*===========home 04=========*/
 	.header.style4 .header-control {
@@ -10167,7 +10184,7 @@ iframe {
 	}
 	.teamo-iconbox-wrapp.default {
 		padding: 20px 0 30px;
-		
+
 	}
 	.cart-form .shop_table tbody > tr > td {
 		padding: 10px;
@@ -10970,7 +10987,7 @@ iframe {
 .product-item.style-6 .loop-form-add-to-cart .button, .pinmap-buttom, .header-nav-wapper .vertical-wapper,
 .list-category .category-item:hover {
 	background-color: #65a15a;
-	
+
 }
 .product-item .button:hover,
 input[type="text"]:focus,
@@ -10987,9 +11004,9 @@ select:focus, .sevice-box-content .sevice-button:hover, .widget_filter_size li.a
 .checkout-wrapp .group-button-payment .btn-credit-card, .payment-method-wrapp .button-control .btn-pay-now, .end-checkout .button, .btn-zoom.open_qv:hover,
 .attribute_size .list-size a.active, .attribute_size .list-size a:hover, .shopcart-description .actions .button-viewcart:hover,
 .product-item.style-6 .loop-form-add-to-cart .button {
-	
+
 	border-color: #fff !important;
-	
+
 }
 a:hover, a:focus, a:active,
 .product-item.style-2 ul li a:hover, .quantity .btn-number:hover, .header-user-form-tabs .tab-link li.active,
@@ -11002,7 +11019,7 @@ a:hover, a:focus, a:active,
 .tab-details-product .tab-link li.active a, .review_form .comment-form-review .stars a.active, .review_form .comment-form-review .stars a:hover,
 .related .slick-slider.nav-center > .slick-arrow:hover, .up-sells .slick-slider.nav-center > .slick-arrow:hover, .slider-item .button:hover, .slick-slider.nav-center > .slick-arrow:hover {
 	color: #65a15a;
-	
+
 }
 .details-thumd .thumbnails_carousel .owl-item .active img {
 	border-color: #65a15a;

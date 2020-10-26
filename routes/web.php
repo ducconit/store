@@ -7,21 +7,39 @@ use Illuminate\Support\Facades\Route;
 //})->name('dashboard');
 
 /*==========MAIN WEB==============*/
+//Index
 Route::get('/','HomeController@index')->name('index');
 
 
-//product
+//Category
+Route::resource('category','CategoryController');
+//Best Seller
+Route::get('best-seller',function (){
+
+})->name('best-seller');
+
+
+//Product
 Route::resource('product','ProductController');
 
 
 
+/*============Shopping Cart============*/
+Route::post('cart/add','CartController@addToCart')->name("addToCart");
+Route::get('cart','CartController@index')->name("cart.index");
+Route::get('checkout','CartController@checkOut')->name("cart.checkout");
 
 
 
-//pages
+/*==================Pages==============*/
+
+
+//about
 Route::get('/about',function (){
     return inertia('About');
 })->name('about');
+
+//contact
 Route::get('/contact',function (){
     return inertia('Contact');
 })->name('contact');

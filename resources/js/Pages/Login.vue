@@ -115,7 +115,11 @@ export default {
     },
     methods: {
         login() {
-            axios.post('/login', {})
+            this.$inertia.post('/login',this.formLogin,{
+                onSuccess(){
+                    console.log('ok')
+                }
+            })
         }
     }
 }

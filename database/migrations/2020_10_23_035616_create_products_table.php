@@ -24,17 +24,13 @@ class CreateProductsTable extends Migration
             $table->string('slug')->unique();
             $table->string('status')->default(1);
             $table->unsignedBigInteger('price')->default(0);
+            $table->unsignedBigInteger('sale')->default(0);
+            $table->string('type_sale')->default('percent')->comment('percent: sale theo %, price: sale theo gia tien');
             $table->unsignedBigInteger('quantity')->default(1);
             $table->softDeletes();
             $table->timestamps();
         });
 
-        Schema::create('detail_product', function (Blueprint $table) {
-            $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->mediumText('description')->nullable();
-            $table->boolean('isComment')->default(1);
-        });
 
         Schema::create('category_product',function(Blueprint $table){
            $table->unsignedBigInteger('category_id');
@@ -51,7 +47,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('detail_product');
         Schema::dropIfExists('category_product');
         Schema::dropIfExists('products');
     }

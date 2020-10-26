@@ -3158,6 +3158,158 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/CheckOut.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Cart/CheckOut.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "CheckOut",
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/Index.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Cart/Index.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Index",
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Category/Show.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Category/Show.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/Breadcrumb */ "./resources/js/components/Breadcrumb.vue");
+/* harmony import */ var _components_ItemProduct__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/ItemProduct */ "./resources/js/components/ItemProduct.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Category",
+  components: {
+    Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_1__["default"],
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    ItemProduct: _components_ItemProduct__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact.vue?vue&type=script&lang=js& ***!
@@ -3529,7 +3681,951 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     login: function login() {
-      axios.post('/login', {});
+      this.$inertia.post('/login', this.formLogin, {
+        onSuccess: function onSuccess() {
+          console.log('ok');
+        }
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Show.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/Show.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/Breadcrumb */ "./resources/js/components/Breadcrumb.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Show",
+  data: function data() {
+    return {
+      quantity: 1
+    };
+  },
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  methods: {
+    newPrice: function newPrice(price, type_sale, sale) {
+      if (type_sale == 'price') {
+        var newPrice = Math.ceil(price - sale);
+      } else {
+        var newPrice = Math.ceil(price * (100 - sale) / 100);
+      }
+
+      return newPrice.toLocaleString() + '.000 VNĐ';
+    },
+    decrement: function decrement() {
+      if (this.quantity > 1) {
+        this.quantity -= 1;
+      }
+    },
+    increment: function increment() {
+      this.quantity += 1;
+    },
+    addToCart: function addToCart() {
+      this.$inertia.post('/cart/add', {
+        product: this.$page.product.id,
+        quantity: this.quantity
+      }, {
+        preserveState: true,
+        preserveScroll: true
+      });
     }
   }
 });
@@ -5609,6 +6705,40 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Breadcrumb",
+  props: ['breadcrumbs']
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
@@ -6174,58 +7304,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Header"
+  name: "Header",
+  methods: {
+    sho: function sho() {
+      console.log(this.$page.carts);
+    }
+  }
 });
 
 /***/ }),
@@ -6296,6 +7381,109 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "IstagramFeed"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ItemProduct.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ItemProduct",
+  props: ['product'],
+  methods: {
+    newPrice: function newPrice(price, type_sale, sale) {
+      if (type_sale == 'price') {
+        var newPrice = Math.ceil(price - sale);
+      } else {
+        var newPrice = Math.ceil(price * (100 - sale) / 100);
+      }
+
+      return newPrice.toLocaleString() + '.000 VNĐ';
+    },
+    compareDate: function compareDate(oldDate) {
+      oldDate = new Date(oldDate);
+      var toDay = new Date();
+      return parseInt((toDay.getTime() - oldDate.getTime()) / (24 * 3600 * 1000)) < 7;
+    }
+  }
 });
 
 /***/ }),
@@ -12438,7 +13626,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".top-bar-left .facebook[data-v-1f42fb90], .top-bar-left .email[data-v-1f42fb90] {\n  white-space: nowrap;\n  max-width: 150px;\n  display: inline-block;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.top-bar-left .facebook[data-v-1f42fb90] {\n  margin-right: 1.3rem;\n}\n.top-bar-left .email[data-v-1f42fb90] {\n  max-width: 250px;\n}", ""]);
+exports.push([module.i, ".top-bar-left a[data-v-1f42fb90]:hover {\n  color: #fff;\n}\n.top-bar-left .facebook[data-v-1f42fb90], .top-bar-left .email[data-v-1f42fb90] {\n  white-space: nowrap;\n  max-width: 150px;\n  display: inline-block;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.top-bar-left .facebook[data-v-1f42fb90] {\n  margin-right: 1.3rem;\n}\n.top-bar-left .email[data-v-1f42fb90] {\n  max-width: 250px;\n}", ""]);
 
 // exports
 
@@ -38083,6 +39271,254 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Cart/CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("app-layout")
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/Index.vue?vue&type=template&id=1c532428&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Cart/Index.vue?vue&type=template&id=1c532428&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("app-layout")
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Category/Show.vue?vue&type=template&id=96074896&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Category/Show.vue?vue&type=template&id=96074896&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("app-layout", [
+    _c("div", { staticClass: "main-content main-content-product no-sidebar" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-lg-12" },
+            [
+              _c("Breadcrumb", {
+                attrs: {
+                  breadcrumbs: [
+                    { name: "Category", link: _vm.route("category.index") }
+                  ]
+                }
+              })
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "content-area shop-grid-content full-width col-lg-12 col-md-12 col-sm-12 col-xs-12"
+            },
+            [
+              _c("div", { staticClass: "site-main" }, [
+                _c("h3", { staticClass: "custom_blog_title" }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.$page.category.name) +
+                      "\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _vm.$page.products.length
+                  ? _c("div", { staticClass: "shop-top-control" }, [
+                      _c("form", { staticClass: "select-item select-form" }, [
+                        _c("span", { staticClass: "title" }, [_vm._v("Sort")]),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            staticClass: "chosen-select",
+                            staticStyle: { display: "none" },
+                            attrs: {
+                              title: "sort",
+                              "data-placeholder": "9 Products/Page"
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "2" } }, [
+                              _vm._v("9 Products/Page")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "1" } }, [
+                              _vm._v("12 Products/Page")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "3" } }, [
+                              _vm._v("10 Products/Page")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "4" } }, [
+                              _vm._v("8 Products/Page")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "5" } }, [
+                              _vm._v("6 Products/Page")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("form", { staticClass: "filter-choice select-form" }, [
+                        _c("span", { staticClass: "title" }, [
+                          _vm._v("Sort by")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            staticClass: "chosen-select",
+                            staticStyle: { display: "none" },
+                            attrs: {
+                              title: "sort-by",
+                              "data-placeholder": "Price: Low to High"
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "1" } }, [
+                              _vm._v("Price: Low to High")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "2" } }, [
+                              _vm._v("Sort by popularity")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "3" } }, [
+                              _vm._v("Sort by average rating")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "4" } }, [
+                              _vm._v("Sort by newness")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "5" } }, [
+                              _vm._v("Sort by price: low to high")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "grid-view-mode" }, [
+                        _c("div", { staticClass: "inner" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "modes-mode mode-list",
+                              attrs: { href: "listproducts.html" }
+                            },
+                            [_c("span"), _vm._v(" "), _c("span")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "modes-mode mode-grid  active",
+                              attrs: { href: "gridproducts.html" }
+                            },
+                            [
+                              _c("span"),
+                              _vm._v(" "),
+                              _c("span"),
+                              _vm._v(" "),
+                              _c("span"),
+                              _vm._v(" "),
+                              _c("span")
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  {
+                    staticClass:
+                      "row list-products auto-clear equal-container product-grid"
+                  },
+                  _vm._l(_vm.$page.products, function(product) {
+                    return _vm.$page.products.length
+                      ? _c("item-product", { attrs: { product: product } })
+                      : _c(
+                          "li",
+                          {
+                            staticClass: "text-center p-5 font-weight-bolder h3"
+                          },
+                          [
+                            _vm._v(
+                              "\n                                Product is empty !\n                            "
+                            )
+                          ]
+                        )
+                  }),
+                  1
+                )
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact.vue?vue&type=template&id=2c2b26f2&scoped=true&":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact.vue?vue&type=template&id=2c2b26f2&scoped=true& ***!
@@ -38766,6 +40202,3233 @@ var render = function() {
         ])
       ])
     ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Show.vue?vue&type=template&id=6fc30034&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/Show.vue?vue&type=template&id=6fc30034&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("app-layout", [
+    _c(
+      "div",
+      { staticClass: "main-content main-content-details single no-sidebar" },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-lg-12" },
+              [
+                _c("breadcrumb", {
+                  attrs: {
+                    breadcrumbs: [
+                      { link: _vm.route("product.index"), name: "Product" },
+                      { name: _vm.$page.product.name }
+                    ]
+                  }
+                })
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "content-area content-details full-width col-lg-9 col-md-8 col-sm-12 col-xs-12"
+              },
+              [
+                _c("div", { staticClass: "site-main" }, [
+                  _c("div", { staticClass: "details-product" }, [
+                    _c("div", { staticClass: "details-thumd" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "image-preview-container image-thick-box image_preview_container"
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              id: "img_zoom",
+                              "data-zoom-image": _vm.$page.product.poster,
+                              src: _vm.$page.product.poster,
+                              alt: "Poster Product"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "btn-zoom open_qv",
+                              attrs: { href: "#" }
+                            },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-search",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "product-preview image-small product_preview"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "thumbnails_carousel owl-carousel",
+                              attrs: {
+                                id: "thumbnails",
+                                "data-nav": "true",
+                                "data-autoplay": "false",
+                                "data-dots": "false",
+                                "data-loop": "false",
+                                "data-margin": "10"
+                              }
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "active",
+                                  attrs: {
+                                    href: "#",
+                                    "data-image": _vm.$page.product.poster,
+                                    "data-zoom-image": _vm.$page.product.poster
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: _vm.$page.product.poster,
+                                      "data-large-image":
+                                        _vm.$page.product.poster,
+                                      alt: "img"
+                                    }
+                                  })
+                                ]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "details-infor" }, [
+                      _c("h1", { staticClass: "product-title" }, [
+                        _vm._v(
+                          "\n                                        " +
+                            _vm._s(_vm.$page.product.name) +
+                            "\n                                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "availability" },
+                        [
+                          _vm._v(
+                            "\n                                        Categories :\n                                        "
+                          ),
+                          _vm._l(_vm.$page.categories, function(category) {
+                            return _c(
+                              "inertia-link",
+                              {
+                                staticClass: "mr-2 border",
+                                staticStyle: {
+                                  "border-radius": "4px",
+                                  padding: "0 3px"
+                                },
+                                attrs: {
+                                  href: _vm.route(
+                                    "category.show",
+                                    category.slug
+                                  )
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  _vm._s(category.name) +
+                                    "\n                                        "
+                                )
+                              ]
+                            )
+                          })
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _vm.$page.product.sale > 0
+                        ? _c("div", { staticClass: "price" }, [
+                            _c("del", { staticStyle: { "font-size": "70%" } }, [
+                              _vm._v(
+                                "\n                                            " +
+                                  _vm._s(
+                                    _vm.$page.product.price.toLocaleString()
+                                  ) +
+                                  ".000 VNĐ\n                                        "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "ins",
+                              {
+                                staticStyle: {
+                                  color: "#65a15a",
+                                  "font-weight": "bolder"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                            " +
+                                    _vm._s(
+                                      _vm.newPrice(
+                                        _vm.$page.product.price,
+                                        _vm.$page.product.type_sale,
+                                        _vm.$page.product.sale
+                                      )
+                                    ) +
+                                    "\n                                        "
+                                )
+                              ]
+                            )
+                          ])
+                        : _c("div", { staticClass: "price" }, [
+                            _c("ins", [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$page.product.price.toLocaleString()
+                                ) + ".000 VNĐ"
+                              )
+                            ])
+                          ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "group-button" }, [
+                        _c(
+                          "div",
+                          { staticClass: "yith-wcwl-add-to-wishlist" },
+                          [
+                            _c("div", { staticClass: "yith-wcwl-add-button" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Add to Wishlist")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "quantity-add-to-cart" }, [
+                          _c("div", { staticClass: "quantity" }, [
+                            _c("div", { staticClass: "control" }, [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "btn-number",
+                                  attrs: { href: "#" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.decrement($event)
+                                    }
+                                  }
+                                },
+                                [_vm._v("-")]
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.quantity,
+                                    expression: "quantity"
+                                  }
+                                ],
+                                staticClass: "input-qty",
+                                attrs: { min: "0", title: "Qty" },
+                                domProps: { value: _vm.quantity },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.quantity = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "btn-number",
+                                  attrs: { href: "#" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.increment($event)
+                                    }
+                                  }
+                                },
+                                [_vm._v("+")]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "single_add_to_cart_button button",
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.addToCart($event)
+                                }
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                                Add to cart\n                                            "
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "tab-details-product" }, [
+                    _c("ul", { staticClass: "tab-link" }, [
+                      _c("li", { staticClass: "active" }, [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              "data-toggle": "tab",
+                              "aria-expanded": "true",
+                              href: "#product-descriptions"
+                            }
+                          },
+                          [_vm._v("Descriptions ")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", {}, [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              "data-toggle": "tab",
+                              "aria-expanded": "true",
+                              href: "#information"
+                            }
+                          },
+                          [_vm._v("Information ")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", {}, [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              "data-toggle": "tab",
+                              "aria-expanded": "true",
+                              href: "#reviews"
+                            }
+                          },
+                          [_vm._v("Reviews")]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tab-container" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "tab-panel active",
+                          attrs: { id: "product-descriptions" }
+                        },
+                        [
+                          _c("p", [
+                            _vm._v(
+                              "\n                                            Quisque quis ipsum venenatis, fermentum ante volutpat, ornare enim.\n                                            Phasellus molestie risus non aliquet cursus.\n                                            Integer\n                                            vestibulum mi lorem, id hendrerit ante lobortis non.\n                                            Nunc ante ante, lobortis non pretium non, vulputate vel nisi.\n                                            Maecenas dolor elit, fringilla nec turpis ac, auctor vulputate nulla.\n                                            Phasellus sed\n                                            laoreet velit.\n                                        "
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(
+                              "\n                                            Proin fringilla urna vel mattis euismod.\n                                            Etiam sodales, massa non tincidunt iaculis, mauris libero scelerisque justo,\n                                            ut\n                                            rutrum lectus urna sit amet quam.\n                                            Nulla maximus vestibulum mi vitae accumsan.\n                                        "
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "tab-panel",
+                          attrs: { id: "information" }
+                        },
+                        [
+                          _c("table", { staticClass: "table table-bordered" }, [
+                            _c("tbody", [
+                              _c("tr", [
+                                _c("td", [_vm._v("Size")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v(" XS / S / M / L")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Color")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("White/ Black/ Teal/ Brown")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Properties")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("Colorful Dress")])
+                              ])
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "tab-panel", attrs: { id: "reviews" } },
+                        [
+                          _c("div", { staticClass: "reviews-tab" }, [
+                            _c("div", { staticClass: "comments" }, [
+                              _c("h2", { staticClass: "reviews-title" }, [
+                                _vm._v(
+                                  "\n                                                    1 review for\n                                                    "
+                                ),
+                                _c("span", [_vm._v("Areca palm")])
+                              ]),
+                              _vm._v(" "),
+                              _c("ol", { staticClass: "commentlist" }, [
+                                _c("li", { staticClass: "conment" }, [
+                                  _c(
+                                    "div",
+                                    { staticClass: "conment-container" },
+                                    [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass: "avatar",
+                                          attrs: { href: "#" }
+                                        },
+                                        [
+                                          _c("img", {
+                                            attrs: {
+                                              src: "/images/avartar.jpeg",
+                                              alt: "img"
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "comment-text" },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "stars-rating" },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "star-rating" },
+                                                [
+                                                  _c("span", {
+                                                    staticClass: "star-5"
+                                                  })
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                { staticClass: "count-star" },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                        (1)\n                                                                    "
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c("p", { staticClass: "meta" }, [
+                                            _c(
+                                              "strong",
+                                              { staticClass: "author" },
+                                              [_vm._v("Cobus Bester")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c("span", [_vm._v("-")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "span",
+                                              { staticClass: "time" },
+                                              [_vm._v("June 7, 2013")]
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "description" },
+                                            [
+                                              _c("p", [
+                                                _vm._v(
+                                                  "Simple and effective design. One of my\n                                                                        favorites."
+                                                )
+                                              ])
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "review_form_wrapper" }, [
+                              _c("div", { staticClass: "review_form" }, [
+                                _c("div", { staticClass: "comment-respond" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "comment-reply-title" },
+                                    [_vm._v("Add a review ")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "form",
+                                    { staticClass: "comment-form-review" },
+                                    [
+                                      _c(
+                                        "p",
+                                        { staticClass: "comment-notes" },
+                                        [
+                                          _c(
+                                            "span",
+                                            { staticClass: "email-notes" },
+                                            [
+                                              _vm._v(
+                                                "Your email address will not be published."
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(
+                                            "\n                                                                Required fields are marked\n                                                                "
+                                          ),
+                                          _c(
+                                            "span",
+                                            { staticClass: "required" },
+                                            [_vm._v("*")]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "comment-form-rating" },
+                                        [
+                                          _c("label", [_vm._v("Your rating")]),
+                                          _vm._v(" "),
+                                          _c("p", { staticClass: "stars" }, [
+                                            _c("span", [
+                                              _c("a", {
+                                                staticClass: "star-1",
+                                                attrs: { href: "#" }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("a", {
+                                                staticClass: "star-2",
+                                                attrs: { href: "#" }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("a", {
+                                                staticClass: "star-3",
+                                                attrs: { href: "#" }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("a", {
+                                                staticClass: "star-4",
+                                                attrs: { href: "#" }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("a", {
+                                                staticClass: "star-5",
+                                                attrs: { href: "#" }
+                                              })
+                                            ])
+                                          ])
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        { staticClass: "comment-form-comment" },
+                                        [
+                                          _c("label", [
+                                            _vm._v(
+                                              "\n                                                                    Your review\n                                                                    "
+                                            ),
+                                            _c(
+                                              "span",
+                                              { staticClass: "required" },
+                                              [_vm._v("*")]
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("textarea", {
+                                            attrs: {
+                                              title: "review",
+                                              id: "comment",
+                                              name: "comment",
+                                              cols: "45",
+                                              rows: "8"
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        { staticClass: "comment-form-author" },
+                                        [
+                                          _c("label", [
+                                            _vm._v(
+                                              "\n                                                                    Name\n                                                                    "
+                                            ),
+                                            _c("span", {}, [_vm._v("*")])
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("input", {
+                                            attrs: {
+                                              title: "author",
+                                              id: "author",
+                                              name: "author",
+                                              type: "text",
+                                              value: ""
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        { staticClass: "comment-form-email" },
+                                        [
+                                          _c("label", [
+                                            _vm._v(
+                                              "\n                                                                    Email\n                                                                    "
+                                            ),
+                                            _c("span", {}, [_vm._v("*")])
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("input", {
+                                            attrs: {
+                                              title: "email",
+                                              id: "email",
+                                              name: "email",
+                                              type: "email",
+                                              value: ""
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "form-submit" }, [
+                                        _c("input", {
+                                          staticClass: "submit",
+                                          attrs: {
+                                            name: "submit",
+                                            type: "submit",
+                                            id: "submit",
+                                            value: "Submit"
+                                          }
+                                        })
+                                      ])
+                                    ]
+                                  )
+                                ])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticStyle: { clear: "left" } }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "related products product-grid" }, [
+                    _c("h2", { staticClass: "product-grid-title" }, [
+                      _vm._v("You may also like")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "owl-products owl-slick equal-container nav-center slick-initialized slick-slider",
+                        attrs: {
+                          "data-slick":
+                            '{"autoplay":false, "autoplaySpeed":1000, "arrows":true, "dots":false, "infinite":true, "speed":800, "rows":1}',
+                          "data-responsive":
+                            '[{"breakpoint":"2000","settings":{"slidesToShow":3}},{"breakpoint":"1200","settings":{"slidesToShow":2}},{"breakpoint":"992","settings":{"slidesToShow":2}},{"breakpoint":"480","settings":{"slidesToShow":1}}]'
+                        }
+                      },
+                      [
+                        _c("span", {
+                          staticClass: "fa fa-angle-left slick-arrow",
+                          staticStyle: { display: "block" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "slick-list draggable",
+                            attrs: { "aria-live": "polite" }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "slick-track",
+                                staticStyle: {
+                                  opacity: "1",
+                                  width: "4000px",
+                                  transform: "translate3d(-1200px, 0px, 0px)"
+                                },
+                                attrs: { role: "listbox" }
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-cloned",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "-3",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-2.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Areca palm")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-cloned",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "-2",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-3.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Arrowhead")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-cloned",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "-1",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-4.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Bird’s Nest Fern")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-current slick-active first-slick",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "0",
+                                      "aria-hidden": "false",
+                                      tabindex: "-1",
+                                      role: "option",
+                                      "aria-describedby": "slick-slide00"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "0"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-1.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "0"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "0"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "0"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "0"
+                                                    }
+                                                  },
+                                                  [_vm._v("Aluminum Plant")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-active",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "1",
+                                      "aria-hidden": "false",
+                                      tabindex: "-1",
+                                      role: "option",
+                                      "aria-describedby": "slick-slide01"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "0"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-2.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "0"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "0"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "0"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "0"
+                                                    }
+                                                  },
+                                                  [_vm._v("Areca palm")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-active last-slick",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "2",
+                                      "aria-hidden": "false",
+                                      tabindex: "-1",
+                                      role: "option",
+                                      "aria-describedby": "slick-slide02"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "0"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-3.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "0"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "0"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "0"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "0"
+                                                    }
+                                                  },
+                                                  [_vm._v("Arrowhead")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "3",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1",
+                                      role: "option",
+                                      "aria-describedby": "slick-slide03"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-4.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Bird’s Nest Fern")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-cloned",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "4",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-1.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Aluminum Plant")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-cloned",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "5",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-2.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Areca palm")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "product-item style-1 slick-slide slick-cloned",
+                                    staticStyle: { width: "400px" },
+                                    attrs: {
+                                      "data-slick-index": "6",
+                                      "aria-hidden": "true",
+                                      tabindex: "-1"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "product-inner equal-element",
+                                        staticStyle: { height: "465px" }
+                                      },
+                                      [
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-top" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "flash" },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  { staticClass: "onnew" },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      { staticClass: "text" },
+                                                      [
+                                                        _vm._v(
+                                                          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-thumb" },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "thumb-inner" },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("img", {
+                                                      attrs: {
+                                                        src:
+                                                          "/images/product-item-3.jpg",
+                                                        alt: "img"
+                                                      }
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "thumb-group"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "yith-wcwl-add-to-wishlist"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "yith-wcwl-add-button"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                attrs: {
+                                                                  href: "#",
+                                                                  tabindex: "-1"
+                                                                }
+                                                              },
+                                                              [
+                                                                _vm._v(
+                                                                  "Add to Wishlist"
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "button quick-wiew-button",
+                                                        attrs: {
+                                                          href: "#",
+                                                          tabindex: "-1"
+                                                        }
+                                                      },
+                                                      [_vm._v("Quick View")]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "loop-form-add-to-cart"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "button",
+                                                          {
+                                                            staticClass:
+                                                              "single_add_to_cart_button button",
+                                                            attrs: {
+                                                              tabindex: "-1"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "Add to cart\n                                                                    "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "product-info" },
+                                          [
+                                            _c(
+                                              "h5",
+                                              {
+                                                staticClass:
+                                                  "product-name product_title"
+                                              },
+                                              [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    attrs: {
+                                                      href: "#",
+                                                      tabindex: "-1"
+                                                    }
+                                                  },
+                                                  [_vm._v("Arrowhead")]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "group-info" },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "stars-rating"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "star-rating"
+                                                      },
+                                                      [
+                                                        _c("span", {
+                                                          staticClass: "star-3"
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "count-star"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                                    (3)\n                                                                "
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  { staticClass: "price" },
+                                                  [
+                                                    _c("del", [
+                                                      _vm._v(
+                                                        "\n                                                                    $65\n                                                                "
+                                                      )
+                                                    ]),
+                                                    _vm._v(" "),
+                                                    _c("ins", [
+                                                      _vm._v(
+                                                        "\n                                                                    $45\n                                                                "
+                                                      )
+                                                    ])
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("span", {
+                          staticClass: "fa fa-angle-right slick-arrow",
+                          staticStyle: { display: "block" }
+                        })
+                      ]
+                    )
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -42904,6 +47567,71 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-lg-12" }, [
+      _c("div", { staticClass: "breadcrumb-trail breadcrumbs" }, [
+        _c(
+          "ul",
+          { staticClass: "trail-items breadcrumb" },
+          [
+            _c(
+              "li",
+              { staticClass: "trail-item trail-begin" },
+              [
+                _c("inertia-link", { attrs: { href: _vm.route("index") } }, [
+                  _vm._v("Home")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _vm._l(_vm.breadcrumbs, function(breadcrumb) {
+              return _vm.breadcrumbs.length
+                ? _c(
+                    "li",
+                    { staticClass: "trail-item trail-begin" },
+                    [
+                      breadcrumb.link
+                        ? _c(
+                            "inertia-link",
+                            { attrs: { href: breadcrumb.link } },
+                            [_vm._v(_vm._s(breadcrumb.name))]
+                          )
+                        : _c("b", [_vm._v(_vm._s(breadcrumb.name))])
+                    ],
+                    1
+                  )
+                : _vm._e()
+            })
+          ],
+          2
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&scoped=true&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&scoped=true& ***!
@@ -43285,12 +48013,243 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(2),
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "main-header" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12"
+                },
+                [
+                  _c("div", { staticClass: "header-control" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "block-minicart teamo-mini-cart block-header teamo-dropdown"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "shopcart-icon",
+                            attrs: {
+                              href: "javascript:void(0);",
+                              "data-teamo": "teamo-dropdown"
+                            },
+                            on: { click: _vm.sho }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                        Cart\n                                        "
+                            ),
+                            _c("span", { staticClass: "count" }, [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t" +
+                                  _vm._s(_vm.$page.cartCount) +
+                                  "\n\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "shopcart-description teamo-submenu" },
+                          [
+                            _c("div", { staticClass: "content-wrap" }, [
+                              _c("h3", { staticClass: "title" }, [
+                                _vm._v("Shopping Cart")
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "ul",
+                                { staticClass: "minicart-items" },
+                                _vm._l(_vm.$page.carts, function(cart) {
+                                  return _c(
+                                    "li",
+                                    {
+                                      staticClass: "product-cart mini_cart_item"
+                                    },
+                                    [
+                                      _vm._m(4, true),
+                                      _vm._v(" "),
+                                      _vm._m(5, true)
+                                    ]
+                                  )
+                                }),
+                                0
+                              ),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "subtotal" }, [
+                                _c("span", { staticClass: "total-title" }, [
+                                  _vm._v("Subtotal: ")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "total-price" }, [
+                                  _c("span", { staticClass: "Price-amount" }, [
+                                    _vm._v(
+                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t" +
+                                        _vm._s(
+                                          _vm.$page.priceTotal.toLocaleString()
+                                        ) +
+                                        ".000 VNĐ\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                    )
+                                  ])
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "actions" },
+                                [
+                                  _c(
+                                    "inertia-link",
+                                    {
+                                      staticClass: "button button-viewcart",
+                                      attrs: { href: _vm.route("cart.index") }
+                                    },
+                                    [_c("span", [_vm._v("View Bag")])]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "inertia-link",
+                                    {
+                                      staticClass: "button button-checkout",
+                                      attrs: {
+                                        href: _vm.route("cart.checkout")
+                                      }
+                                    },
+                                    [_c("span", [_vm._v("Checkout")])]
+                                  )
+                                ],
+                                1
+                              )
+                            ])
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._m(6),
+                    _vm._v(" "),
+                    _vm._m(7)
+                  ])
+                ]
+              )
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "header-nav-container rows-space-20" }, [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "header-nav-wapper main-menu-wapper" }, [
-              _vm._m(3),
+              _c("div", { staticClass: "vertical-wapper block-nav-categori" }, [
+                _vm._m(8),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "block-content verticalmenu-content" },
+                  [
+                    _c(
+                      "ul",
+                      {
+                        staticClass:
+                          "teamo-nav-vertical vertical-menu teamo-clone-mobile-menu"
+                      },
+                      [
+                        _vm._l(_vm.$page.categories, function(category) {
+                          return _c(
+                            "li",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: _vm.$page.categories,
+                                  expression: "$page.categories"
+                                }
+                              ],
+                              staticClass: "menu-item menu-item-has-children"
+                            },
+                            [
+                              _c(
+                                "inertia-link",
+                                {
+                                  staticClass: "teamo-menu-item-title",
+                                  attrs: {
+                                    href: _vm.route(
+                                      "category.show",
+                                      category.slug
+                                    ),
+                                    title: category.name
+                                  }
+                                },
+                                [_vm._v(_vm._s(category.name))]
+                              ),
+                              _vm._v(" "),
+                              category.children.length
+                                ? _c("span", { staticClass: "toggle-submenu" })
+                                : _vm._e(),
+                              _vm._v(" "),
+                              category.children.length
+                                ? _c(
+                                    "ul",
+                                    {
+                                      staticClass: " submenu",
+                                      attrs: { role: "menu" }
+                                    },
+                                    _vm._l(category.children, function(
+                                      children
+                                    ) {
+                                      return _c(
+                                        "li",
+                                        { staticClass: "menu-item" },
+                                        [
+                                          _c(
+                                            "inertia-link",
+                                            {
+                                              staticClass: "teamo-item-title",
+                                              attrs: {
+                                                title: "child.name",
+                                                href: _vm.route(
+                                                  "category.show",
+                                                  children.slug
+                                                )
+                                              }
+                                            },
+                                            [_vm._v(_vm._s(children.name))]
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    }),
+                                    0
+                                  )
+                                : _vm._e()
+                            ],
+                            1
+                          )
+                        }),
+                        _vm._v(" "),
+                        !_vm.$page.categories.length
+                          ? _c("li", { staticClass: "menu-item text-center" }, [
+                              _vm._v(
+                                "\n                                        Empty !\n                                    "
+                              )
+                            ])
+                          : _vm._e()
+                      ],
+                      2
+                    )
+                  ]
+                )
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "header-nav" }, [
                 _c("div", { staticClass: "container-wapper" }, [
@@ -43313,105 +48272,21 @@ var render = function() {
                               attrs: { href: _vm.route("index"), title: "Home" }
                             },
                             [_vm._v("Home")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "inertia-link",
+                            {
+                              staticClass: "teamo-menu-item-title",
+                              attrs: {
+                                href: _vm.route("best-seller"),
+                                title: "Home"
+                              }
+                            },
+                            [_vm._v("Best Seller")]
                           )
                         ],
                         1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "menu-item  menu-item-has-children item-megamenu"
-                        },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "teamo-menu-item-title",
-                              attrs: { href: "#", title: "Pages" }
-                            },
-                            [_vm._v("Pages")]
-                          ),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "toggle-submenu" }),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "submenu mega-menu menu-page",
-                              staticStyle: {
-                                width: "1170px",
-                                left: "-487.703px"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "row" }, [
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item"
-                                  },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "teamo-custommenu default"
-                                      },
-                                      [
-                                        _c(
-                                          "h2",
-                                          { staticClass: "widgettitle" },
-                                          [_vm._v("Shop Pages")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("ul", { staticClass: "menu" }, [
-                                          _vm._m(4),
-                                          _vm._v(" "),
-                                          _vm._m(5),
-                                          _vm._v(" "),
-                                          _vm._m(6),
-                                          _vm._v(" "),
-                                          _vm._m(7),
-                                          _vm._v(" "),
-                                          _c(
-                                            "li",
-                                            { staticClass: "menu-item" },
-                                            [
-                                              _c(
-                                                "inertia-link",
-                                                {
-                                                  attrs: {
-                                                    href: _vm.route("login")
-                                                  }
-                                                },
-                                                [_vm._v("Login/Register")]
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _vm._m(8),
-                                _vm._v(" "),
-                                _c("div", {
-                                  staticClass:
-                                    "col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item"
-                                }),
-                                _vm._v(" "),
-                                _c("div", {
-                                  staticClass:
-                                    "col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item"
-                                })
-                              ])
-                            ]
-                          )
-                        ]
                       ),
                       _vm._v(" "),
                       _c(
@@ -43521,1086 +48396,122 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "main-header" }, [
-        _c("div", { staticClass: "row" }, [
+    return _c(
+      "div",
+      {
+        staticClass:
+          "col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element"
+      },
+      [
+        _c("div", { staticClass: "logo" }, [
+          _c("a", { attrs: { href: "/" } }, [
+            _c("img", { attrs: { src: "/images/logo.png", alt: "img" } })
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12" },
+      [
+        _c("div", { staticClass: "block-search-block" }, [
           _c(
-            "div",
-            {
-              staticClass:
-                "col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element"
-            },
+            "form",
+            { staticClass: "form-search form-search-width-category" },
             [
-              _c("div", { staticClass: "logo" }, [
-                _c("a", { attrs: { href: "/" } }, [
-                  _c("img", { attrs: { src: "/images/logo.png", alt: "img" } })
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12" },
-            [
-              _c("div", { staticClass: "block-search-block" }, [
-                _c(
-                  "form",
-                  { staticClass: "form-search form-search-width-category" },
-                  [
-                    _c("div", { staticClass: "form-content" }, [
-                      _c("div", { staticClass: "category" }, [
-                        _c(
-                          "select",
-                          {
-                            staticClass: "chosen-select",
-                            staticStyle: { display: "none" },
-                            attrs: {
-                              title: "cate",
-                              "data-placeholder": "All Categories",
-                              tabindex: "-1"
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "all" } }, [
-                              _vm._v("All")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "inner" }, [
-                        _c("input", {
-                          staticClass: "input",
-                          attrs: {
-                            type: "text",
-                            name: "s",
-                            value: "",
-                            placeholder: "Search here"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn-search",
-                          attrs: { type: "submit" }
-                        },
-                        [_c("span", { staticClass: "icon-search" })]
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12" },
-            [
-              _c("div", { staticClass: "header-control" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "block-minicart teamo-mini-cart block-header teamo-dropdown"
-                  },
-                  [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "shopcart-icon",
-                        attrs: {
-                          href: "javascript:void(0);",
-                          "data-teamo": "teamo-dropdown"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                        Cart\n                                        "
-                        ),
-                        _c("span", { staticClass: "count" }, [
-                          _vm._v(
-                            "\n\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t"
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "shopcart-description teamo-submenu" },
-                      [
-                        _c("div", { staticClass: "content-wrap" }, [
-                          _c("h3", { staticClass: "title" }, [
-                            _vm._v("Shopping Cart")
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            {
-                              staticClass:
-                                "minicart-items mCustomScrollbar _mCS_1"
-                            },
-                            [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "mCustomScrollBox mCS-light mCSB_vertical mCSB_inside",
-                                  staticStyle: { "max-height": "250px" },
-                                  attrs: { id: "mCSB_1", tabindex: "0" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "mCSB_container",
-                                      staticStyle: {
-                                        position: "relative",
-                                        top: "0",
-                                        left: "0"
-                                      },
-                                      attrs: {
-                                        id: "mCSB_1_container",
-                                        dir: "ltr"
-                                      }
-                                    },
-                                    [
-                                      _c(
-                                        "li",
-                                        {
-                                          staticClass:
-                                            "product-cart mini_cart_item"
-                                        },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass: "product-media",
-                                              attrs: { href: "#" }
-                                            },
-                                            [
-                                              _c("img", {
-                                                staticClass: "mCS_img_loaded",
-                                                attrs: {
-                                                  src:
-                                                    "/images/item-minicart-1.jpg",
-                                                  alt: "img"
-                                                }
-                                              })
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "product-details" },
-                                            [
-                                              _c(
-                                                "h5",
-                                                { staticClass: "product-name" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "European Pan Palm"
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                { staticClass: "variations" },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "attribute_color"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          attrs: { href: "#" }
-                                                        },
-                                                        [_vm._v("Black")]
-                                                      )
-                                                    ]
-                                                  ),
-                                                  _vm._v(
-                                                    "\n                                                            ,\n                                                            "
-                                                  ),
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "attribute_size"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          attrs: { href: "#" }
-                                                        },
-                                                        [_vm._v("300ml")]
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass: "product-price"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    { staticClass: "price" },
-                                                    [
-                                                      _c("span", [
-                                                        _vm._v("$45")
-                                                      ])
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "product-quantity"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(x1)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass: "product-remove"
-                                                },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "" } },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-trash-o",
-                                                        attrs: {
-                                                          "aria-hidden": "true"
-                                                        }
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "li",
-                                        {
-                                          staticClass:
-                                            "product-cart mini_cart_item"
-                                        },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass: "product-media",
-                                              attrs: { href: "#" }
-                                            },
-                                            [
-                                              _c("img", {
-                                                staticClass: "mCS_img_loaded",
-                                                attrs: {
-                                                  src:
-                                                    "/images/item-minicart-2.jpg",
-                                                  alt: "img"
-                                                }
-                                              })
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "product-details" },
-                                            [
-                                              _c(
-                                                "h5",
-                                                { staticClass: "product-name" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Soap Ferns Solutions"
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                { staticClass: "variations" },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "attribute_color"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          attrs: { href: "#" }
-                                                        },
-                                                        [_vm._v("Black")]
-                                                      )
-                                                    ]
-                                                  ),
-                                                  _vm._v(
-                                                    "\n                                                            ,\n                                                            "
-                                                  ),
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "attribute_size"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          attrs: { href: "#" }
-                                                        },
-                                                        [_vm._v("300ml")]
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass: "product-price"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    { staticClass: "price" },
-                                                    [
-                                                      _c("span", [
-                                                        _vm._v("$45")
-                                                      ])
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "product-quantity"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(x1)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass: "product-remove"
-                                                },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "" } },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-trash-o",
-                                                        attrs: {
-                                                          "aria-hidden": "true"
-                                                        }
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "li",
-                                        {
-                                          staticClass:
-                                            "product-cart mini_cart_item"
-                                        },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass: "product-media",
-                                              attrs: { href: "#" }
-                                            },
-                                            [
-                                              _c("img", {
-                                                staticClass: "mCS_img_loaded",
-                                                attrs: {
-                                                  src:
-                                                    "/images/item-minicart-3.jpg",
-                                                  alt: "img"
-                                                }
-                                              })
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "product-details" },
-                                            [
-                                              _c(
-                                                "h5",
-                                                { staticClass: "product-name" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Ferns Solutions Soap"
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                { staticClass: "variations" },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "attribute_color"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          attrs: { href: "#" }
-                                                        },
-                                                        [_vm._v("Black")]
-                                                      )
-                                                    ]
-                                                  ),
-                                                  _vm._v(
-                                                    "\n                                                            ,\n                                                            "
-                                                  ),
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "attribute_size"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          attrs: { href: "#" }
-                                                        },
-                                                        [_vm._v("300ml")]
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass: "product-price"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    { staticClass: "price" },
-                                                    [
-                                                      _c("span", [
-                                                        _vm._v("$45")
-                                                      ])
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "product-quantity"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(x1)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass: "product-remove"
-                                                },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "" } },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-trash-o",
-                                                        attrs: {
-                                                          "aria-hidden": "true"
-                                                        }
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical",
-                                      staticStyle: { display: "block" },
-                                      attrs: { id: "mCSB_1_scrollbar_vertical" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "mCSB_draggerContainer"
-                                        },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "mCSB_dragger",
-                                              staticStyle: {
-                                                position: "absolute",
-                                                "min-height": "30px",
-                                                display: "block",
-                                                height: "159px",
-                                                "max-height": "240px"
-                                              },
-                                              attrs: {
-                                                id: "mCSB_1_dragger_vertical",
-                                                oncontextmenu: "return false;"
-                                              }
-                                            },
-                                            [
-                                              _c("div", {
-                                                staticClass: "mCSB_dragger_bar",
-                                                staticStyle: {
-                                                  "line-height": "30px"
-                                                }
-                                              })
-                                            ]
-                                          ),
-                                          _c("div", {
-                                            staticClass: "mCSB_draggerRail"
-                                          })
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "subtotal" }, [
-                            _c("span", { staticClass: "total-title" }, [
-                              _vm._v("Subtotal: ")
-                            ]),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "total-price" }, [
-                              _c("span", { staticClass: "Price-amount" }, [
-                                _vm._v(
-                                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t$135\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "actions" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "button button-viewcart",
-                                attrs: { href: "shoppingcart.html" }
-                              },
-                              [_c("span", [_vm._v("View Bag")])]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "button button-checkout",
-                                attrs: { href: "checkout.html" }
-                              },
-                              [_c("span", [_vm._v("Checkout")])]
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                ),
+              _c("div", { staticClass: "form-content" }, [
+                _c("div", { staticClass: "category" }, [
+                  _c(
+                    "select",
+                    {
+                      staticClass: "chosen-select",
+                      staticStyle: { display: "none" },
+                      attrs: {
+                        title: "cate",
+                        "data-placeholder": "All Categories",
+                        tabindex: "-1"
+                      }
+                    },
+                    [_c("option", { attrs: { value: "all" } }, [_vm._v("All")])]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inner" }, [
+                  _c("input", {
+                    staticClass: "input",
+                    attrs: {
+                      type: "text",
+                      name: "s",
+                      value: "",
+                      placeholder: "Search here"
+                    }
+                  })
+                ]),
                 _vm._v(" "),
                 _c(
-                  "div",
-                  { staticClass: "block-account block-header teamo-dropdown" },
-                  [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "javascript:void(0);",
-                          "data-teamo": "teamo-dropdown"
-                        }
-                      },
-                      [_c("span", { staticClass: "flaticon-user" })]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "header-account teamo-submenu" }, [
-                      _c("div", { staticClass: "header-user-form-tabs" }, [
-                        _c("ul", { staticClass: "tab-link" }, [
-                          _c("li", { staticClass: "active" }, [
-                            _c(
-                              "a",
-                              {
-                                attrs: {
-                                  "data-toggle": "tab",
-                                  "aria-expanded": "true",
-                                  href: "#header-tab-login"
-                                }
-                              },
-                              [_vm._v("Login")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c(
-                              "a",
-                              {
-                                attrs: {
-                                  "data-toggle": "tab",
-                                  "aria-expanded": "true",
-                                  href: "#header-tab-rigister"
-                                }
-                              },
-                              [_vm._v("Register")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tab-container" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass: "tab-panel active",
-                              attrs: { id: "header-tab-login" }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "login form-login",
-                                  attrs: { method: "post" }
-                                },
-                                [
-                                  _c(
-                                    "p",
-                                    { staticClass: "form-row form-row-wide" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "input-text",
-                                        attrs: {
-                                          type: "email",
-                                          placeholder: "Email"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "form-row form-row-wide" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "input-text",
-                                        attrs: {
-                                          type: "password",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "form-row" }, [
-                                    _c(
-                                      "label",
-                                      { staticClass: "form-checkbox" },
-                                      [
-                                        _c("input", {
-                                          staticClass: "input-checkbox",
-                                          attrs: { type: "checkbox" }
-                                        }),
-                                        _vm._v(" "),
-                                        _c("span", [
-                                          _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRemember me\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("input", {
-                                      staticClass: "button",
-                                      attrs: { type: "submit", value: "Login" }
-                                    })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "lost_password" }, [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("Lost your password?")
-                                    ])
-                                  ])
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "tab-panel",
-                              attrs: { id: "header-tab-rigister" }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "register form-register",
-                                  attrs: { method: "post" }
-                                },
-                                [
-                                  _c(
-                                    "p",
-                                    { staticClass: "form-row form-row-wide" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "input-text",
-                                        attrs: {
-                                          type: "email",
-                                          placeholder: "Email"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "form-row form-row-wide" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "input-text",
-                                        attrs: {
-                                          type: "password",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "form-row" }, [
-                                    _c("input", {
-                                      staticClass: "button",
-                                      attrs: {
-                                        type: "submit",
-                                        value: "Register"
-                                      }
-                                    })
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ])
-                      ])
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "menu-bar mobile-navigation menu-toggle",
-                    attrs: { href: "#" }
-                  },
-                  [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+                  "button",
+                  { staticClass: "btn-search", attrs: { type: "submit" } },
+                  [_c("span", { staticClass: "icon-search" })]
                 )
               ])
             ]
           )
         ])
-      ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { staticClass: "product-media", attrs: { href: "#" } }, [
+      _c("img", { attrs: { src: "/images/item-minicart-1.jpg", alt: "img" } })
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "vertical-wapper block-nav-categori" }, [
-      _c("div", { staticClass: "block-title" }, [
-        _c("span", { staticClass: "icon-bar" }, [
-          _c("span"),
-          _vm._v(" "),
-          _c("span"),
-          _vm._v(" "),
-          _c("span")
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "text" }, [_vm._v("All Categories")])
+    return _c("div", { staticClass: "product-details" }, [
+      _c("h5", { staticClass: "product-name" }, [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("European Pan Palm")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "block-content verticalmenu-content" }, [
-        _c(
-          "ul",
-          {
-            staticClass:
-              "teamo-nav-vertical vertical-menu teamo-clone-mobile-menu"
-          },
-          [
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { href: "#", title: "New Arrivals" }
-                },
-                [_vm._v("New Arrivals")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Hot Sale", href: "#" }
-                },
-                [_vm._v("Hot Sale")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item menu-item-has-children" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Accessories", href: "#" }
-                },
-                [_vm._v("Accessories")]
-              ),
-              _vm._v(" "),
-              _c("span", { staticClass: "toggle-submenu" }),
-              _vm._v(" "),
-              _c("ul", { staticClass: " submenu", attrs: { role: "menu" } }, [
-                _c("li", { staticClass: "menu-item" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "teamo-item-title",
-                      attrs: { title: "Audio", href: "#" }
-                    },
-                    [_vm._v("Audio")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "menu-item" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "teamo-item-title",
-                      attrs: { title: "Cacti", href: "#" }
-                    },
-                    [_vm._v("Cacti")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "menu-item" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "teamo-item-title",
-                      attrs: { title: "New Arrivals", href: "#" }
-                    },
-                    [_vm._v("New Arrivals")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "menu-item" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "teamo-item-title",
-                      attrs: { title: "Accessories", href: "#" }
-                    },
-                    [_vm._v("Accessories")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "menu-item" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "teamo-item-title",
-                      attrs: { title: "Storage", href: "#" }
-                    },
-                    [_vm._v("Storage")]
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Cacti", href: "#" }
-                },
-                [_vm._v("Cacti")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Palms", href: "#" }
-                },
-                [_vm._v("Palms")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Ferns", href: "#" }
-                },
-                [_vm._v("Ferns")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Hanging plants", href: "#" }
-                },
-                [_vm._v("Hanging plants")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "teamo-menu-item-title",
-                  attrs: { title: "Variegated", href: "#" }
-                },
-                [_vm._v("Variegated")]
-              )
-            ])
-          ]
+      _c("div", { staticClass: "variations" }, [
+        _c("span", { staticClass: "attribute_color" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Black")])
+        ]),
+        _vm._v(
+          "\n                                                            ,\n                                                            "
+        ),
+        _c("span", { staticClass: "attribute_size" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("300ml")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "product-price" }, [
+        _c("span", { staticClass: "price" }, [_c("span", [_vm._v("$45")])])
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "product-quantity" }, [
+        _vm._v(
+          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(x1)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-remove" }, [
+        _c("a", { attrs: { href: "" } }, [
+          _c("i", {
+            staticClass: "fa fa-trash-o",
+            attrs: { "aria-hidden": "true" }
+          })
+        ])
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "menu-item" }, [
-      _c("a", { attrs: { href: "shoppingcart.html" } }, [
-        _vm._v("Shopping Cart")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "menu-item" }, [
-      _c("a", { attrs: { href: "checkout.html" } }, [_vm._v("Checkout")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "menu-item" }, [
-      _c("a", { attrs: { href: "contact.html" } }, [_vm._v("Contact us")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "menu-item" }, [
-      _c("a", { attrs: { href: "404page.html" } }, [_vm._v("404")])
     ])
   },
   function() {
@@ -44609,37 +48520,182 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item" },
+      { staticClass: "block-account block-header teamo-dropdown" },
       [
-        _c("div", { staticClass: "teamo-custommenu default" }, [
-          _c("h2", { staticClass: "widgettitle" }, [_vm._v("Product")]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "menu" }, [
-            _c("li", { staticClass: "menu-item" }, [
-              _c("a", { attrs: { href: "productdetails-fullwidth.html" } }, [
-                _vm._v("Product Fullwidth")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c("a", { attrs: { href: "productdetails-leftsidebar.html" } }, [
-                _vm._v(
-                  "Product left\n                                                                    sidebar"
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "javascript:void(0);",
+              "data-teamo": "teamo-dropdown"
+            }
+          },
+          [_c("span", { staticClass: "flaticon-user" })]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "header-account teamo-submenu" }, [
+          _c("div", { staticClass: "header-user-form-tabs" }, [
+            _c("ul", { staticClass: "tab-link" }, [
+              _c("li", { staticClass: "active" }, [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      "data-toggle": "tab",
+                      "aria-expanded": "true",
+                      href: "#header-tab-login"
+                    }
+                  },
+                  [_vm._v("Login")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      "data-toggle": "tab",
+                      "aria-expanded": "true",
+                      href: "#header-tab-rigister"
+                    }
+                  },
+                  [_vm._v("Register")]
                 )
               ])
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-item" }, [
-              _c("a", { attrs: { href: "productdetails-rightsidebar.html" } }, [
-                _vm._v(
-                  "Product right\n                                                                    sidebar"
-                )
-              ])
+            _c("div", { staticClass: "tab-container" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "tab-panel active",
+                  attrs: { id: "header-tab-login" }
+                },
+                [
+                  _c(
+                    "form",
+                    {
+                      staticClass: "login form-login",
+                      attrs: { method: "post" }
+                    },
+                    [
+                      _c("p", { staticClass: "form-row form-row-wide" }, [
+                        _c("input", {
+                          staticClass: "input-text",
+                          attrs: { type: "email", placeholder: "Email" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "form-row form-row-wide" }, [
+                        _c("input", {
+                          staticClass: "input-text",
+                          attrs: { type: "password", placeholder: "Password" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "form-row" }, [
+                        _c("label", { staticClass: "form-checkbox" }, [
+                          _c("input", {
+                            staticClass: "input-checkbox",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRemember me\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "button",
+                          attrs: { type: "submit", value: "Login" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "lost_password" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Lost your password?")
+                        ])
+                      ])
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "tab-panel",
+                  attrs: { id: "header-tab-rigister" }
+                },
+                [
+                  _c(
+                    "form",
+                    {
+                      staticClass: "register form-register",
+                      attrs: { method: "post" }
+                    },
+                    [
+                      _c("p", { staticClass: "form-row form-row-wide" }, [
+                        _c("input", {
+                          staticClass: "input-text",
+                          attrs: { type: "email", placeholder: "Email" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "form-row form-row-wide" }, [
+                        _c("input", {
+                          staticClass: "input-text",
+                          attrs: { type: "password", placeholder: "Password" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "form-row" }, [
+                        _c("input", {
+                          staticClass: "button",
+                          attrs: { type: "submit", value: "Register" }
+                        })
+                      ])
+                    ]
+                  )
+                ]
+              )
             ])
           ])
         ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "menu-bar mobile-navigation menu-toggle",
+        attrs: { href: "#" }
+      },
+      [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "block-title" }, [
+      _c("span", { staticClass: "icon-bar" }, [
+        _c("span"),
+        _vm._v(" "),
+        _c("span"),
+        _vm._v(" "),
+        _c("span")
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "text" }, [_vm._v("All Categories")])
+    ])
   }
 ]
 render._withStripped = true
@@ -44879,6 +48935,166 @@ var staticRenderFns = [
               )
             ]
           )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "li",
+    {
+      staticClass:
+        "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
+    },
+    [
+      _c(
+        "div",
+        {
+          staticClass: "product-inner equal-element",
+          staticStyle: { height: "365px" }
+        },
+        [
+          _c("div", { staticClass: "product-top" }, [
+            _vm.compareDate(_vm.product.created_at)
+              ? _c("div", { staticClass: "flash" }, [_vm._m(0)])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.product.sale > 0
+              ? _c("div", { staticClass: "sale" }, [
+                  _c("span", { staticClass: "onsale" }, [
+                    _vm.product.type_sale == "price"
+                      ? _c("span", { staticClass: "text" }, [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t- " +
+                              _vm._s(_vm.product.sale) +
+                              ",000 VNĐ\n\t\t\t\t\t\t\t\t\t\t\t\t"
+                          )
+                        ])
+                      : _c("span", { staticClass: "text" }, [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t- " +
+                              _vm._s(_vm.product.sale) +
+                              " %\n\t\t\t\t\t\t\t\t\t\t\t\t"
+                          )
+                        ])
+                  ])
+                ])
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "product-thumb" }, [
+            _c("div", { staticClass: "thumb-inner" }, [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", { attrs: { src: _vm.product.poster, alt: "img" } })
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "product-info" }, [
+            _c(
+              "h5",
+              { staticClass: "product-name product_title" },
+              [
+                _c(
+                  "inertia-link",
+                  {
+                    attrs: { href: _vm.route("product.show", _vm.product.slug) }
+                  },
+                  [_vm._v(_vm._s(_vm.product.name))]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "group-info" }, [
+              _vm.product.sale > 0
+                ? _c("div", { staticClass: "price" }, [
+                    _c("del", [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.product.price) +
+                          ",000 VNĐ\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("ins", [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(
+                            _vm.newPrice(
+                              _vm.product.price,
+                              _vm.product.type_sale,
+                              _vm.product.sale
+                            )
+                          ) +
+                          "\n                        "
+                      )
+                    ])
+                  ])
+                : _c("div", { staticClass: "price" }, [
+                    _c("ins", [_vm._v(_vm._s(_vm.product.price) + ",000 VNĐ")])
+                  ])
+            ])
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "onnew" }, [
+      _c("span", { staticClass: "text" }, [
+        _vm._v("\n\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "thumb-group" }, [
+      _c("div", { staticClass: "yith-wcwl-add-to-wishlist" }, [
+        _c("div", { staticClass: "yith-wcwl-add-button" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Add to Wishlist")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "a",
+        { staticClass: "button quick-wiew-button", attrs: { href: "#" } },
+        [_vm._v("Quick View")]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "loop-form-add-to-cart" }, [
+        _c("button", { staticClass: "single_add_to_cart_button button" }, [
+          _vm._v("Add to cart\n                            ")
         ])
       ])
     ])
@@ -63714,6 +67930,12 @@ var map = {
 	"./API/Index.vue": "./resources/js/Pages/API/Index.vue",
 	"./About": "./resources/js/Pages/About.vue",
 	"./About.vue": "./resources/js/Pages/About.vue",
+	"./Cart/CheckOut": "./resources/js/Pages/Cart/CheckOut.vue",
+	"./Cart/CheckOut.vue": "./resources/js/Pages/Cart/CheckOut.vue",
+	"./Cart/Index": "./resources/js/Pages/Cart/Index.vue",
+	"./Cart/Index.vue": "./resources/js/Pages/Cart/Index.vue",
+	"./Category/Show": "./resources/js/Pages/Category/Show.vue",
+	"./Category/Show.vue": "./resources/js/Pages/Category/Show.vue",
 	"./Contact": "./resources/js/Pages/Contact.vue",
 	"./Contact.vue": "./resources/js/Pages/Contact.vue",
 	"./Dashboard": "./resources/js/Pages/Dashboard.vue",
@@ -63722,6 +67944,8 @@ var map = {
 	"./Index.vue": "./resources/js/Pages/Index.vue",
 	"./Login": "./resources/js/Pages/Login.vue",
 	"./Login.vue": "./resources/js/Pages/Login.vue",
+	"./Product/Show": "./resources/js/Pages/Product/Show.vue",
+	"./Product/Show.vue": "./resources/js/Pages/Product/Show.vue",
 	"./Profile/DeleteUserForm": "./resources/js/Pages/Profile/DeleteUserForm.vue",
 	"./Profile/DeleteUserForm.vue": "./resources/js/Pages/Profile/DeleteUserForm.vue",
 	"./Profile/LogoutOtherBrowserSessionsForm": "./resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue",
@@ -63972,6 +68196,213 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_169e1534_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_169e1534_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Cart/CheckOut.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Cart/CheckOut.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CheckOut_vue_vue_type_template_id_dbff1c08_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true& */ "./resources/js/Pages/Cart/CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true&");
+/* harmony import */ var _CheckOut_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CheckOut.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Cart/CheckOut.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CheckOut_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CheckOut_vue_vue_type_template_id_dbff1c08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CheckOut_vue_vue_type_template_id_dbff1c08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "dbff1c08",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Cart/CheckOut.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Cart/CheckOut.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Cart/CheckOut.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckOut_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CheckOut.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/CheckOut.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckOut_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Cart/CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Pages/Cart/CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true& ***!
+  \*****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckOut_vue_vue_type_template_id_dbff1c08_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/CheckOut.vue?vue&type=template&id=dbff1c08&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckOut_vue_vue_type_template_id_dbff1c08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckOut_vue_vue_type_template_id_dbff1c08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Cart/Index.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/Pages/Cart/Index.vue ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Index_vue_vue_type_template_id_1c532428_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=1c532428&scoped=true& */ "./resources/js/Pages/Cart/Index.vue?vue&type=template&id=1c532428&scoped=true&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Cart/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Index_vue_vue_type_template_id_1c532428_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_1c532428_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "1c532428",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Cart/Index.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Cart/Index.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/Pages/Cart/Index.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Cart/Index.vue?vue&type=template&id=1c532428&scoped=true&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/Pages/Cart/Index.vue?vue&type=template&id=1c532428&scoped=true& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_1c532428_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=1c532428&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Cart/Index.vue?vue&type=template&id=1c532428&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_1c532428_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_1c532428_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Category/Show.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Category/Show.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Show_vue_vue_type_template_id_96074896_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=96074896&scoped=true& */ "./resources/js/Pages/Category/Show.vue?vue&type=template&id=96074896&scoped=true&");
+/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Category/Show.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Show_vue_vue_type_template_id_96074896_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Show_vue_vue_type_template_id_96074896_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "96074896",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Category/Show.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Category/Show.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Category/Show.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Category/Show.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Category/Show.vue?vue&type=template&id=96074896&scoped=true&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Pages/Category/Show.vue?vue&type=template&id=96074896&scoped=true& ***!
+  \*****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_96074896_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=96074896&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Category/Show.vue?vue&type=template&id=96074896&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_96074896_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_96074896_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -64266,6 +68697,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_0004d9e0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_0004d9e0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Product/Show.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/Pages/Product/Show.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Show_vue_vue_type_template_id_6fc30034_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=6fc30034&scoped=true& */ "./resources/js/Pages/Product/Show.vue?vue&type=template&id=6fc30034&scoped=true&");
+/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/Show.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Show_vue_vue_type_template_id_6fc30034_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Show_vue_vue_type_template_id_6fc30034_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "6fc30034",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Product/Show.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Product/Show.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/Pages/Product/Show.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Show.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Product/Show.vue?vue&type=template&id=6fc30034&scoped=true&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/Pages/Product/Show.vue?vue&type=template&id=6fc30034&scoped=true& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_6fc30034_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=6fc30034&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Show.vue?vue&type=template&id=6fc30034&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_6fc30034_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_6fc30034_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -65387,6 +69887,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Breadcrumb.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/Breadcrumb.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Breadcrumb_vue_vue_type_template_id_c259b9a4_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true& */ "./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true&");
+/* harmony import */ var _Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Breadcrumb.vue?vue&type=script&lang=js& */ "./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Breadcrumb_vue_vue_type_template_id_c259b9a4_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Breadcrumb_vue_vue_type_template_id_c259b9a4_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "c259b9a4",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Breadcrumb.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Breadcrumb.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_template_id_c259b9a4_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_template_id_c259b9a4_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_template_id_c259b9a4_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Footer.vue":
 /*!********************************************!*\
   !*** ./resources/js/components/Footer.vue ***!
@@ -65607,6 +70176,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InstagramFeed_vue_vue_type_template_id_186b9c15_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InstagramFeed_vue_vue_type_template_id_186b9c15_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ItemProduct.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/ItemProduct.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true& */ "./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true&");
+/* harmony import */ var _ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemProduct.vue?vue&type=script&lang=js& */ "./resources/js/components/ItemProduct.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "ee21697e",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ItemProduct.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ItemProduct.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/ItemProduct.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ItemProduct.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true& ***!
+  \********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

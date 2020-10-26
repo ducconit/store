@@ -10,7 +10,7 @@ class Product extends Model
     use HasFactory;
 
     protected $fillable=[
-      'poster','name','slug','status','price','quantity','user_id'
+      'poster','name','slug','status','price','quantity','user_id','type_sale','sale'
     ];
 
     protected $casts=[
@@ -19,6 +19,10 @@ class Product extends Model
 
     function images(){
         return $this->hasMany(ImageProduct::class);
+    }
+
+    function detail(){
+        return $this->hasOne(DetailProduct::class);
     }
 
     function categories(){

@@ -16,7 +16,7 @@ class CreateTicketsTable extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('type')->default('percent')->comment('percent: tính theo %,number: Tính theo số tiền');
+            $table->string('type')->default('percent')->comment('percent: tính theo %,  price: Tính theo số tiền');
             $table->unsignedBigInteger('value')->default(0);
             $table->timestamps();
         });

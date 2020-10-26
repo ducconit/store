@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
             TicketSeeder::class,
             PermissionSeeder::class,
             UserSeeder::class,
-            CategorySeeder::class,
             ProductSeeder::class,
+            CategorySeeder::class,
             SlideSeeder::class
         ]);
     }
