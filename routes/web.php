@@ -28,7 +28,7 @@ Route::resource('product','ProductController');
 Route::post('cart/add','CartController@addToCart')->name("addToCart");
 Route::get('cart','CartController@index')->name("cart.index");
 Route::get('checkout','CartController@checkOut')->name("cart.checkout");
-
+Route::delete('cart/{id}','CartController@destroy')->name('cart.remove');
 
 
 /*==================Pages==============*/

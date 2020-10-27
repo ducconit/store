@@ -16,5 +16,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="to-do-list" />
+    <orderEntry type="module" module-name="weather" />
+    <orderEntry type="module" module-name="laravel7" />
   </component>
 </module>

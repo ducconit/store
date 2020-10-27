@@ -31,8 +31,15 @@ class CartController extends Controller
 
         $price = $product->type_sale == 'price' ? $product->price - $product->sale : $product->price * ((100 - $product->sale) / 100);
 
-        Cart::add($product->id,$product->name,$request->quantity, $price,['poster'=>$product->poster]);
+        Cart::add($product->id,$product->name,$request->quantity, $price,1,['poster' => $product->poster]);
 
+        return back();
+    }
+
+    function destroy($id){
+        if($id){
+            Cart::remove($id);
+        }
         return back();
     }
 }

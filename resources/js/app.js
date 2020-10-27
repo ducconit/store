@@ -7,7 +7,28 @@ import { InertiaForm } from 'laravel-jetstream';
 import PortalVue from 'portal-vue';
 import simplebar from 'simplebar-vue';
 
+//mixin
 Vue.mixin({ methods: { route } });
+
+Vue.mixin({
+    methods:{
+        removeCart(id){
+            if(id){
+                this.$inertia.delete('/cart/'+id,{
+                    preServeState:true,
+                    preserveScroll:true
+                })
+            }
+        },
+        addToCart(id,qty=1) {
+            this.$inertia.post('/cart/add', {product: id, quantity: qty}, {
+                preserveState: true,
+                preserveScroll: true
+            })
+        }
+    }
+})
+
 Vue.use(InertiaApp);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);

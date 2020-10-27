@@ -15,14 +15,14 @@
                             <div class="teamo-language teamo-dropdown">
                                 <a href="#" class="active language-toggle" data-teamo="teamo-dropdown">
 									<span>
-										English (USD)
+										Vietnamese (VNĐ)
 									</span>
                                 </a>
                                 <ul class="teamo-submenu">
                                     <li class="switcher-option">
                                         <a href="#">
 											<span>
-												French (EUR)
+												Vietnamese (VNĐ)
 											</span>
                                         </a>
                                     </li>
@@ -52,7 +52,8 @@
                                 <form class="form-search form-search-width-category">
                                     <div class="form-content">
                                         <div class="category">
-                                            <select title="cate" data-placeholder="All Categories" class="chosen-select" tabindex="-1" style="display: none;">
+                                            <select title="cate" data-placeholder="All Categories" class="chosen-select"
+                                                    tabindex="1">
                                                 <option value="all">All</option>
                                             </select>
                                         </div>
@@ -69,7 +70,7 @@
                         <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
                             <div class="header-control">
                                 <div class="block-minicart teamo-mini-cart block-header teamo-dropdown">
-                                    <a href="javascript:void(0);" @click="sho" class="shopcart-icon" data-teamo="teamo-dropdown">
+                                    <a href="javascript:void(0);" class="shopcart-icon" data-teamo="teamo-dropdown">
                                         Cart
                                         <span class="count">
 										{{ $page.cartCount }}
@@ -81,31 +82,32 @@
                                             <ul class="minicart-items">
                                                 <li v-for="cart in $page.carts" class="product-cart mini_cart_item">
                                                     <a href="#" class="product-media">
-                                                        <img src="/images/item-minicart-1.jpg" alt="img">
+                                                        <img :src="cart.options.poster" :alt="cart.name">
                                                     </a>
                                                     <div class="product-details">
                                                         <h5 class="product-name">
-                                                            <a href="#">European Pan Palm</a>
+                                                            <a href="#">{{ cart.name }}</a>
                                                         </h5>
-                                                        <div class="variations">
-															<span class="attribute_color">
-																<a href="#">Black</a>
-															</span>
-                                                            ,
-                                                            <span class="attribute_size">
-																<a href="#">300ml</a>
+                                                        <!--                                                        <div class="variations">-->
+                                                        <!--															<span class="attribute_color">-->
+                                                        <!--																<a href="#">Black</a>-->
+                                                        <!--															</span>-->
+                                                        <!--                                                            ,-->
+                                                        <!--                                                            <span class="attribute_size">-->
+                                                        <!--																<a href="#">300ml</a>-->
+                                                        <!--															</span>-->
+                                                        <!--                                                        </div>-->
+                                                        <div class="product-price">
+															<span class="price">
+																<span>{{ cart.price.toLocaleString() }}.000 VNĐ</span>
 															</span>
                                                         </div>
-                                                        <span class="product-price">
-															<span class="price">
-																<span>$45</span>
-															</span>
-														</span>
                                                         <span class="product-quantity">
-															(x1)
+															x{{ cart.qty }}
 														</span>
-                                                        <div class="product-remove">
-                                                            <a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                        <div class="product-remove"
+                                                             @click.prevent="removeCart(cart.rowId)">
+                                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -384,12 +386,7 @@
 
 <script>
 export default {
-name: "Header",
-    methods:{
-    sho(){
-        console.log(this.$page.carts)
-    }
-    }
+    name: "Header"
 }
 </script>
 

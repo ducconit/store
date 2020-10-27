@@ -13,6 +13,9 @@ import Footer from "@/components/Footer";
     export default {
         components:{
             Header, Footer
+        },
+        mounted:function (){
+                $(".chosen-select").chosen({disable_search_threshold: 10});
         }
     }
 </script>

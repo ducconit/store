@@ -115,7 +115,7 @@
                                                     <a href="#" class="btn-number" @click.prevent="increment">+</a>
                                                 </div>
                                             </div>
-                                            <button class="single_add_to_cart_button button" @click.prevent="addToCart">
+                                            <button class="single_add_to_cart_button button" @click.prevent="addToCart($page.product.id,quantity)">
                                                 Add to cart
                                             </button>
                                         </div>
@@ -912,12 +912,6 @@ export default {
         },
         increment() {
             this.quantity += 1;
-        },
-        addToCart() {
-            this.$inertia.post('/cart/add', {product: this.$page.product.id, quantity: this.quantity}, {
-                preserveState: true,
-                preserveScroll: true
-            })
         }
     }
 }

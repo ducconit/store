@@ -2586,6 +2586,11 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Header: _components_Header__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  mounted: function mounted() {
+    $(".chosen-select").chosen({
+      disable_search_threshold: 10
+    });
   }
 });
 
@@ -3525,7 +3530,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ProductTab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/ProductTab */ "./resources/js/components/ProductTab.vue");
 /* harmony import */ var _components_News__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/News */ "./resources/js/components/News.vue");
 /* harmony import */ var _components_InstagramFeed__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/InstagramFeed */ "./resources/js/components/InstagramFeed.vue");
-//
 //
 //
 //
@@ -4617,15 +4621,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     increment: function increment() {
       this.quantity += 1;
-    },
-    addToCart: function addToCart() {
-      this.$inertia.post('/cart/add', {
-        product: this.$page.product.id,
-        quantity: this.quantity
-      }, {
-        preserveState: true,
-        preserveScroll: true
-      });
     }
   }
 });
@@ -7304,13 +7299,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Header",
-  methods: {
-    sho: function sho() {
-      console.log(this.$page.carts);
-    }
-  }
+  name: "Header"
 });
 
 /***/ }),
@@ -8139,6 +8131,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_ItemProduct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/components/ItemProduct */ "./resources/js/components/ItemProduct.vue");
 //
 //
 //
@@ -8182,1325 +8175,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "ProductTab"
+  name: "ProductTab",
+  data: function data() {
+    return {
+      newProduct: [],
+      topRate: []
+    };
+  },
+  components: {
+    ItemProduct: _components_ItemProduct__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
 });
 
 /***/ }),
@@ -13627,6 +12313,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, ".top-bar-left a[data-v-1f42fb90]:hover {\n  color: #fff;\n}\n.top-bar-left .facebook[data-v-1f42fb90], .top-bar-left .email[data-v-1f42fb90] {\n  white-space: nowrap;\n  max-width: 150px;\n  display: inline-block;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.top-bar-left .facebook[data-v-1f42fb90] {\n  margin-right: 1.3rem;\n}\n.top-bar-left .email[data-v-1f42fb90] {\n  max-width: 250px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".group-info .price[data-v-ee21697e] {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n.group-info .price del[data-v-ee21697e] {\n  font-size: 80%;\n}\nh5.product_title[data-v-ee21697e] {\n  font-size: 107%;\n}", ""]);
 
 // exports
 
@@ -36214,6 +34919,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--8-2!../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../node_modules/vue-loader/lib??vue-loader-options!./ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layouts/AdminLayout.vue?vue&type=style&index=0&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Layouts/AdminLayout.vue?vue&type=style&index=0&lang=css& ***!
@@ -39888,8 +38623,6 @@ var render = function() {
       _vm._v(" "),
       _c("product-tab"),
       _vm._v(" "),
-      _c("News"),
-      _vm._v(" "),
       _c("instagram-feed")
     ],
     1
@@ -40507,7 +39240,10 @@ var render = function() {
                               on: {
                                 click: function($event) {
                                   $event.preventDefault()
-                                  return _vm.addToCart($event)
+                                  return _vm.addToCart(
+                                    _vm.$page.product.id,
+                                    _vm.quantity
+                                  )
                                 }
                               }
                             },
@@ -48041,8 +46777,7 @@ var render = function() {
                             attrs: {
                               href: "javascript:void(0);",
                               "data-teamo": "teamo-dropdown"
-                            },
-                            on: { click: _vm.sho }
+                            }
                           },
                           [
                             _vm._v(
@@ -48077,9 +46812,87 @@ var render = function() {
                                       staticClass: "product-cart mini_cart_item"
                                     },
                                     [
-                                      _vm._m(4, true),
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass: "product-media",
+                                          attrs: { href: "#" }
+                                        },
+                                        [
+                                          _c("img", {
+                                            attrs: {
+                                              src: cart.options.poster,
+                                              alt: cart.name
+                                            }
+                                          })
+                                        ]
+                                      ),
                                       _vm._v(" "),
-                                      _vm._m(5, true)
+                                      _c(
+                                        "div",
+                                        { staticClass: "product-details" },
+                                        [
+                                          _c(
+                                            "h5",
+                                            { staticClass: "product-name" },
+                                            [
+                                              _c(
+                                                "a",
+                                                { attrs: { href: "#" } },
+                                                [_vm._v(_vm._s(cart.name))]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "product-price" },
+                                            [
+                                              _c(
+                                                "span",
+                                                { staticClass: "price" },
+                                                [
+                                                  _c("span", [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        cart.price.toLocaleString()
+                                                      ) + ".000 VNĐ"
+                                                    )
+                                                  ])
+                                                ]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "span",
+                                            { staticClass: "product-quantity" },
+                                            [
+                                              _vm._v(
+                                                "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tx" +
+                                                  _vm._s(cart.qty) +
+                                                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "product-remove",
+                                              on: {
+                                                click: function($event) {
+                                                  $event.preventDefault()
+                                                  return _vm.removeCart(
+                                                    cart.rowId
+                                                  )
+                                                }
+                                              }
+                                            },
+                                            [_vm._m(4, true)]
+                                          )
+                                        ]
+                                      )
                                     ]
                                   )
                                 }),
@@ -48136,9 +46949,9 @@ var render = function() {
                       ]
                     ),
                     _vm._v(" "),
-                    _vm._m(6),
+                    _vm._m(5),
                     _vm._v(" "),
-                    _vm._m(7)
+                    _vm._m(6)
                   ])
                 ]
               )
@@ -48150,7 +46963,7 @@ var render = function() {
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "header-nav-wapper main-menu-wapper" }, [
               _c("div", { staticClass: "vertical-wapper block-nav-categori" }, [
-                _vm._m(8),
+                _vm._m(7),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -48373,7 +47186,9 @@ var staticRenderFns = [
           },
           [
             _c("span", [
-              _vm._v("\n\t\t\t\t\t\t\t\t\t\tEnglish (USD)\n\t\t\t\t\t\t\t\t\t")
+              _vm._v(
+                "\n\t\t\t\t\t\t\t\t\t\tVietnamese (VNĐ)\n\t\t\t\t\t\t\t\t\t"
+              )
             ])
           ]
         ),
@@ -48383,7 +47198,7 @@ var staticRenderFns = [
             _c("a", { attrs: { href: "#" } }, [
               _c("span", [
                 _vm._v(
-                  "\n\t\t\t\t\t\t\t\t\t\t\t\tFrench (EUR)\n\t\t\t\t\t\t\t\t\t\t\t"
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\tVietnamese (VNĐ)\n\t\t\t\t\t\t\t\t\t\t\t"
                 )
               ])
             ])
@@ -48430,11 +47245,10 @@ var staticRenderFns = [
                     "select",
                     {
                       staticClass: "chosen-select",
-                      staticStyle: { display: "none" },
                       attrs: {
                         title: "cate",
                         "data-placeholder": "All Categories",
-                        tabindex: "-1"
+                        tabindex: "1"
                       }
                     },
                     [_c("option", { attrs: { value: "all" } }, [_vm._v("All")])]
@@ -48469,49 +47283,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "product-media", attrs: { href: "#" } }, [
-      _c("img", { attrs: { src: "/images/item-minicart-1.jpg", alt: "img" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "product-details" }, [
-      _c("h5", { staticClass: "product-name" }, [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("European Pan Palm")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "variations" }, [
-        _c("span", { staticClass: "attribute_color" }, [
-          _c("a", { attrs: { href: "#" } }, [_vm._v("Black")])
-        ]),
-        _vm._v(
-          "\n                                                            ,\n                                                            "
-        ),
-        _c("span", { staticClass: "attribute_size" }, [
-          _c("a", { attrs: { href: "#" } }, [_vm._v("300ml")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "product-price" }, [
-        _c("span", { staticClass: "price" }, [_c("span", [_vm._v("$45")])])
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "product-quantity" }, [
-        _vm._v(
-          "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(x1)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "product-remove" }, [
-        _c("a", { attrs: { href: "" } }, [
-          _c("i", {
-            staticClass: "fa fa-trash-o",
-            attrs: { "aria-hidden": "true" }
-          })
-        ])
-      ])
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("i", {
+        staticClass: "fa fa-trash-o",
+        attrs: { "aria-hidden": "true" }
+      })
     ])
   },
   function() {
@@ -49009,7 +47785,38 @@ var render = function() {
                 _c("img", { attrs: { src: _vm.product.poster, alt: "img" } })
               ]),
               _vm._v(" "),
-              _vm._m(1)
+              _c("div", { staticClass: "thumb-group" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "button quick-wiew-button",
+                    attrs: { href: "#" }
+                  },
+                  [_vm._v("Quick View")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "loop-form-add-to-cart",
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.addToCart(_vm.product.id)
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "button",
+                      { staticClass: "single_add_to_cart_button button" },
+                      [_vm._v("Add to cart\n                            ")]
+                    )
+                  ]
+                )
+              ])
             ])
           ]),
           _vm._v(" "),
@@ -49079,23 +47886,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "thumb-group" }, [
-      _c("div", { staticClass: "yith-wcwl-add-to-wishlist" }, [
-        _c("div", { staticClass: "yith-wcwl-add-button" }, [
-          _c("a", { attrs: { href: "#" } }, [_vm._v("Add to Wishlist")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "button quick-wiew-button", attrs: { href: "#" } },
-        [_vm._v("Quick View")]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "loop-form-add-to-cart" }, [
-        _c("button", { staticClass: "single_add_to_cart_button button" }, [
-          _vm._v("Add to cart\n                            ")
-        ])
+    return _c("div", { staticClass: "yith-wcwl-add-to-wishlist" }, [
+      _c("div", { staticClass: "yith-wcwl-add-button" }, [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Add to Wishlist")])
       ])
     ])
   }
@@ -50799,2193 +49592,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "teamo-tabs  default rows-space-40" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "tab-head" }, [
-          _c("ul", { staticClass: "tab-link" }, [
-            _c("li", { staticClass: "active" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    "data-toggle": "tab",
-                    "aria-expanded": "true",
-                    href: "#bestseller"
-                  }
-                },
-                [_vm._v("Bestseller")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", {}, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    "data-toggle": "tab",
-                    "aria-expanded": "true",
-                    href: "#new_arrivals"
-                  }
-                },
-                [_vm._v("New Arrivals ")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", {}, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    "data-toggle": "tab",
-                    "aria-expanded": "true",
-                    href: "#top-rated"
-                  }
-                },
-                [_vm._v("Top Rated")]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "tab-container" }, [
-          _c(
-            "div",
-            { staticClass: "tab-panel active", attrs: { id: "bestseller" } },
-            [
-              _c("div", { staticClass: "teamo-product" }, [
-                _c(
-                  "ul",
-                  {
-                    staticClass:
-                      "row list-products auto-clear equal-container product-grid"
-                  },
-                  [
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-1.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Fiddle Leaf Fig")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-2.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Golden Pothos")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-3.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Chine Evergreen")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-4.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Compress Circular")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-5.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Cretan Brake Fern")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-6.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Dumb Cane")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-7.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Glass Cleaner")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-8.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Audiopipe Series")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "tab-panel", attrs: { id: "new_arrivals" } },
-            [
-              _c("div", { staticClass: "teamo-product" }, [
-                _c(
-                  "ul",
-                  {
-                    staticClass:
-                      "row list-products auto-clear equal-container product-grid"
-                  },
-                  [
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-9.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Coaxial Speakers")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-10.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Titanium Super Tweeter")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-11.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Auto Tech Cactis")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-13.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Series Gauge Panel")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-14.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Automatic X-Speed")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-15.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Chrome Shift Knob")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-16.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("European Pan Palm")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass:
-                          "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "product-inner equal-element",
-                            staticStyle: { height: "365px" }
-                          },
-                          [
-                            _c("div", { staticClass: "product-top" }, [
-                              _c("div", { staticClass: "flash" }, [
-                                _c("span", { staticClass: "onnew" }, [
-                                  _c("span", { staticClass: "text" }, [
-                                    _vm._v(
-                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-thumb" }, [
-                              _c("div", { staticClass: "thumb-inner" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/images/product-item-2.jpg",
-                                      alt: "img"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "thumb-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "yith-wcwl-add-to-wishlist"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "yith-wcwl-add-button" },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Add to Wishlist")
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "button quick-wiew-button",
-                                      attrs: { href: "#" }
-                                    },
-                                    [_vm._v("Quick View")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "loop-form-add-to-cart" },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "single_add_to_cart_button button"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Add to cart\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "product-info" }, [
-                              _c(
-                                "h5",
-                                { staticClass: "product-name product_title" },
-                                [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v("Axial Mustang")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "group-info" }, [
-                                _c("div", { staticClass: "stars-rating" }, [
-                                  _c("div", { staticClass: "star-rating" }, [
-                                    _c("span", { staticClass: "star-3" })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "count-star" }, [
-                                    _vm._v(
-                                      "\n                                                    (3)\n                                                "
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "price" }, [
-                                  _c("del", [
-                                    _vm._v(
-                                      "\n                                                    $65\n                                                "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("ins", [
-                                    _vm._v(
-                                      "\n                                                    $45\n                                                "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "tab-panel", attrs: { id: "top-rated" } }, [
+  return _c("div", { staticClass: "teamo-tabs  default rows-space-40" }, [
+    _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "tab-container" }, [
+        _c(
+          "div",
+          { staticClass: "tab-panel active", attrs: { id: "bestseller" } },
+          [
             _c("div", { staticClass: "teamo-product" }, [
               _c(
                 "ul",
@@ -52993,1042 +49608,103 @@ var staticRenderFns = [
                   staticClass:
                     "row list-products auto-clear equal-container product-grid"
                 },
-                [
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-10.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Projector Headlights")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-12.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Beat Sonic")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-8.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Shark Fin Antenna")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-4.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Billet Specialties")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-9.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Side View Mirror")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-13.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Cast Iron Plant")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-16.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Catalytic Converter")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "product-inner equal-element",
-                          staticStyle: { height: "365px" }
-                        },
-                        [
-                          _c("div", { staticClass: "product-top" }, [
-                            _c("div", { staticClass: "flash" }, [
-                              _c("span", { staticClass: "onnew" }, [
-                                _c("span", { staticClass: "text" }, [
-                                  _vm._v(
-                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-thumb" }, [
-                            _c("div", { staticClass: "thumb-inner" }, [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/images/product-item-8.jpg",
-                                    alt: "img"
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "thumb-group" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "yith-wcwl-add-to-wishlist" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "yith-wcwl-add-button" },
-                                      [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("Add to Wishlist")
-                                        ])
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "button quick-wiew-button",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Quick View")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "loop-form-add-to-cart" },
-                                  [
-                                    _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "single_add_to_cart_button button"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Add to cart\n                                                    "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "product-info" }, [
-                            _c(
-                              "h5",
-                              { staticClass: "product-name product_title" },
-                              [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Specialty Iridium")
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "group-info" }, [
-                              _c("div", { staticClass: "stars-rating" }, [
-                                _c("div", { staticClass: "star-rating" }, [
-                                  _c("span", { staticClass: "star-3" })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "count-star" }, [
-                                  _vm._v(
-                                    "\n                                                    (3)\n                                                "
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "price" }, [
-                                _c("del", [
-                                  _vm._v(
-                                    "\n                                                    $65\n                                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("ins", [
-                                  _vm._v(
-                                    "\n                                                    $45\n                                                "
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  )
-                ]
+                _vm._l(_vm.$page.bestSeller, function(product) {
+                  return _vm.$page.bestSeller.length
+                    ? _c("item-product", { attrs: { product: product } })
+                    : _vm._e()
+                }),
+                1
               )
             ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "tab-panel", attrs: { id: "new_products" } }, [
+          _c("div", { staticClass: "teamo-product" }, [
+            _c(
+              "ul",
+              {
+                staticClass:
+                  "row list-products auto-clear equal-container product-grid"
+              },
+              _vm._l(_vm.$page.newProduct, function(product) {
+                return _vm.$page.newProduct.length
+                  ? _c("item-product", { attrs: { product: product } })
+                  : _vm._e()
+              }),
+              1
+            )
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "tab-panel", attrs: { id: "top-rated" } }, [
+          _c("div", { staticClass: "teamo-product" }, [
+            _c(
+              "ul",
+              {
+                staticClass:
+                  "row list-products auto-clear equal-container product-grid"
+              },
+              _vm._l(_vm.$page.topRate, function(product) {
+                return _vm.$page.topRate.length
+                  ? _c("item-product", { attrs: { product: product } })
+                  : _vm._e()
+              }),
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tab-head" }, [
+      _c("ul", { staticClass: "tab-link" }, [
+        _c("li", { staticClass: "active" }, [
+          _c(
+            "a",
+            {
+              attrs: {
+                "data-toggle": "tab",
+                "aria-expanded": "true",
+                href: "#bestseller"
+              }
+            },
+            [_vm._v("Bestseller")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", {}, [
+          _c(
+            "a",
+            {
+              attrs: {
+                "data-toggle": "tab",
+                "aria-expanded": "true",
+                href: "#new_products"
+              }
+            },
+            [_vm._v("New Products ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", {}, [
+          _c(
+            "a",
+            {
+              attrs: {
+                "data-toggle": "tab",
+                "aria-expanded": "true",
+                href: "#top-rated"
+              }
+            },
+            [_vm._v("Top Rated")]
+          )
         ])
       ])
     ])
@@ -69623,10 +65299,33 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+ //mixin
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.mixin({
   methods: {
     route: route
+  }
+});
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.mixin({
+  methods: {
+    removeCart: function removeCart(id) {
+      if (id) {
+        this.$inertia["delete"]('/cart/' + id, {
+          preServeState: true,
+          preserveScroll: true
+        });
+      }
+    },
+    addToCart: function addToCart(id) {
+      var qty = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+      this.$inertia.post('/cart/add', {
+        product: id,
+        quantity: qty
+      }, {
+        preserveState: true,
+        preserveScroll: true
+      });
+    }
   }
 });
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__["InertiaApp"]);
@@ -70192,7 +65891,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true& */ "./resources/js/components/ItemProduct.vue?vue&type=template&id=ee21697e&scoped=true&");
 /* harmony import */ var _ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemProduct.vue?vue&type=script&lang=js& */ "./resources/js/components/ItemProduct.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true& */ "./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -70200,7 +65901,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _ItemProduct_vue_vue_type_template_id_ee21697e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -70229,6 +65930,22 @@ component.options.__file = "resources/js/components/ItemProduct.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ItemProduct.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--8-2!../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../node_modules/vue-loader/lib??vue-loader-options!./ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ItemProduct.vue?vue&type=style&index=0&id=ee21697e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemProduct_vue_vue_type_style_index_0_id_ee21697e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

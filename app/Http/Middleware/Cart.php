@@ -18,7 +18,7 @@ class Cart
      */
     public function handle(Request $request, Closure $next)
     {
-        Inertia::share('carts',Shopping::content());
+        Inertia::share('carts',Shopping::content()->values());
         Inertia::share('priceTotal',Shopping::priceTotal());
         Inertia::share('cartCount',Shopping::count());
         return $next($request);

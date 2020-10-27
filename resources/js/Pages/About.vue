@@ -226,7 +226,8 @@ export default {
     name: "About",
     components:{
         AppLayout
-    }
+    },
+
 }
 </script>
 

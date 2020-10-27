@@ -3,7 +3,6 @@
         <slider-banner></slider-banner>
         <Banner></Banner>
         <product-tab></product-tab>
-        <News></News>
         <instagram-feed></instagram-feed>
     </app-layout>
 </template>

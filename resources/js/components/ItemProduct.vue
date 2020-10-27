@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <a href="#" class="button quick-wiew-button">Quick View</a>
-                        <div class="loop-form-add-to-cart">
+                        <div class="loop-form-add-to-cart" @click.prevent="addToCart(product.id)">
                             <button class="single_add_to_cart_button button">Add to cart
                             </button>
                         </div>
@@ -92,6 +92,18 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .group-info{
+        .price{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            del{
+                font-size: 80%;
+            }
+        }
+    }
+    h5.product_title{
+        font-size: 107%;
+    }
 </style>

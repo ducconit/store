@@ -322,7 +322,7 @@ jQuery(document).ready(function ($) {
 
     // -------chosen----------------------------------------------------
 
-    $(".chosen-select").chosen({disable_search_threshold: 10});
+    // $(".chosen-select").chosen({disable_search_threshold: 10});
     // ====================isotop========================
     function teamo_masonry() {
         var masonry = $('.masonry-grid').isotope({
@@ -602,7 +602,7 @@ jQuery(document).ready(function ($) {
 // ------------------owl-thumbs-----------------------------------------------
     init_carousel();
     function init_carousel() {
-        //owl has thumbs 
+        //owl has thumbs
         $('.owl-carousel.has-thumbs').owlCarousel({
             loop: true,
             items: 1,
@@ -710,7 +710,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    // --------------------------------------------------------------------------            
+    // --------------------------------------------------------------------------
     function kt_get_scrollbar_width() {
         var $inner = jQuery('<div style="width: 100%; height:200px;">test</div>'),
             $outer = jQuery('<div style="width:200px;height:150px; position: absolute; top: 0; left: 0; visibility: hidden; overflow:hidden;"></div>').append($inner),
@@ -810,4 +810,4 @@ jQuery(document).ready(function ($) {
     teamo_countdown();
     teamo_init_menu_toggle();
     teamo_custom_scrollbar_header_nav();
-}); 
+});

@@ -13,9 +13,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <!-- Styles -->
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/owl.carousel.min.css">
@@ -32,16 +32,10 @@
         <link rel="stylesheet" href="/fonts/flaticon/flaticon.css">
         <link rel="stylesheet" href="/css/style.css">
 
+
         <!-- Scripts -->
         @routes
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
-        <script src="{{ mix('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-sans antialiased">
-        @inertia
-
-
-
         {{--script--}}
         <script src="/js/jquery-1.12.4.min.js"></script>
         <script src="/js/jquery.plugin-countdown.min.js"></script>
@@ -62,5 +56,9 @@
         <script src="/js/owl.thumbs.min.js"></script>
         <script src="/js/jquery.scrollbar.min.js"></script>
         <script src="/js/frontend-plugin.js"></script>
+        <script src="{{ mix('js/app.js') }}" defer></script>
+    </head>
+    <body class="font-sans antialiased">
+        @inertia
     </body>
 </html>
