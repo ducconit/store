@@ -42,4 +42,17 @@ class CartController extends Controller
         }
         return back();
     }
+
+    function addToWishlist (Request $request){
+
+        $product = Product::find($request->product);
+
+        if (!$product ) {
+            return abort(404);
+        }
+
+        Cart::instance('wishlist')->add($product->id,$product->name,1,$product->price,1,['poster'=>$product->poster]);
+
+        return back();
+    }
 }

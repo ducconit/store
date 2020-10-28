@@ -26,7 +26,7 @@
                         <img :src="product.poster" alt="img">
                     </a>
                     <div class="thumb-group">
-                        <div class="yith-wcwl-add-to-wishlist">
+                        <div class="yith-wcwl-add-to-wishlist" @click.prevent="addToWishlist(product.id)">
                             <div class="yith-wcwl-add-button">
                                 <a href="#">Add to Wishlist</a>
                             </div>

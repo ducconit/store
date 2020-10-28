@@ -40,14 +40,14 @@
             <div class="container">
                 <div class="main-header">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
+                        <div class="col-lg-2 col-sm-4 col-md-2 col-xs-7 col-ts-12 header-element">
                             <div class="logo">
                                 <a href="/">
                                     <img src="/images/logo.png" alt="img">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12">
+                        <div class="col-lg-6 col-sm-8 col-md-6 col-xs-5 col-ts-12">
                             <div class="block-search-block">
                                 <form class="form-search form-search-width-category">
                                     <div class="form-content">
@@ -58,7 +58,8 @@
                                             </select>
                                         </div>
                                         <div class="inner">
-                                            <input type="text" class="input" name="s" value="" placeholder="Search here">
+                                            <input type="text" class="input" name="s" value=""
+                                                   placeholder="Search here">
                                         </div>
                                         <button class="btn-search" type="submit">
                                             <span class="icon-search"></span>
@@ -67,9 +68,73 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
+                        <div class="col-lg-3 col-sm-12 col-md-4 col-xs-12 col-ts-12">
                             <div class="header-control">
-                                <div class="block-minicart teamo-mini-cart block-header teamo-dropdown">
+                                <div class="block-minicart teamo-mini-cart block-header teamo-dropdown" style="padding-left: 0">
+                                    <a href="javascript:void(0);" class="wishlist-icon" data-teamo="teamo-dropdown">
+                                        Wishlist
+                                        <span class="count">
+										{{ $page.wishlistCount }}
+										</span>
+                                    </a>
+                                    <div class="shopcart-description teamo-submenu">
+                                        <div class="content-wrap">
+                                            <h3 class="title">Wishlist</h3>
+                                            <ul class="minicart-items">
+                                                <li v-for="cart in $page.wishlists" class="product-cart mini_cart_item">
+                                                    <a href="#" class="product-media">
+                                                        <img :src="cart.options.poster" :alt="cart.name">
+                                                    </a>
+                                                    <div class="product-details">
+                                                        <h5 class="product-name">
+                                                            <a href="#">{{ cart.name }}</a>
+                                                        </h5>
+                                                        <!--                                                        <div class="variations">-->
+                                                        <!--															<span class="attribute_color">-->
+                                                        <!--																<a href="#">Black</a>-->
+                                                        <!--															</span>-->
+                                                        <!--                                                            ,-->
+                                                        <!--                                                            <span class="attribute_size">-->
+                                                        <!--																<a href="#">300ml</a>-->
+                                                        <!--															</span>-->
+                                                        <!--                                                        </div>-->
+                                                        <div class="product-price">
+															<span class="price">
+																<span>{{ cart.price.toLocaleString() }}.000 VNĐ</span>
+															</span>
+                                                        </div>
+                                                        <span class="product-quantity">
+															x{{ cart.qty }}
+														</span>
+                                                        <div class="product-remove"
+                                                             @click.prevent="removeCart(cart.rowId)">
+                                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+<!--                                            <div class="subtotal">-->
+<!--                                                <span class="total-title">Subtotal: </span>-->
+<!--                                                <span class="total-price">-->
+<!--													<span class="Price-amount">-->
+<!--														{{ $page.priceTotal.toLocaleString() }}.000 VNĐ-->
+<!--													</span>-->
+<!--												</span>-->
+<!--                                            </div>-->
+<!--                                            <div class="actions">-->
+<!--                                                <inertia-link class="button button-viewcart"-->
+<!--                                                              :href="route('cart.index')">-->
+<!--                                                    <span>View Bag</span>-->
+<!--                                                </inertia-link>-->
+<!--                                                <inertia-link :href="route('cart.checkout')"-->
+<!--                                                              class="button button-checkout">-->
+<!--                                                    <span>Checkout</span>-->
+<!--                                                </inertia-link>-->
+<!--                                            </div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-2 block-minicart teamo-mini-cart block-header teamo-dropdown" style="padding-left: 0">
                                     <a href="javascript:void(0);" class="shopcart-icon" data-teamo="teamo-dropdown">
                                         Cart
                                         <span class="count">
@@ -131,7 +196,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="block-account block-header teamo-dropdown">
+                                <div class="ml-3 block-account block-header teamo-dropdown" style="padding-left: 0">
                                     <a href="javascript:void(0);" data-teamo="teamo-dropdown">
                                         <span class="flaticon-user"></span>
                                     </a>
@@ -221,45 +286,6 @@
                                     <li class="menu-item text-center" v-if="!$page.categories.length">
                                         Empty !
                                     </li>
-<!--                                    <li class="menu-item">-->
-<!--                                        <a title="Hot Sale" href="#" class="teamo-menu-item-title">Hot Sale</a>-->
-<!--                                    </li>-->
-<!--                                    <li class="menu-item menu-item-has-children">-->
-<!--                                        <a title="Accessories" href="#" class="teamo-menu-item-title">Accessories</a>-->
-<!--                                        <span class="toggle-submenu"></span>-->
-<!--                                        <ul role="menu" class=" submenu">-->
-<!--                                            <li class="menu-item">-->
-<!--                                                <a title="Audio" href="#" class="teamo-item-title">Audio</a>-->
-<!--                                            </li>-->
-<!--                                            <li class="menu-item">-->
-<!--                                                <a title="Cacti" href="#" class="teamo-item-title">Cacti</a>-->
-<!--                                            </li>-->
-<!--                                            <li class="menu-item">-->
-<!--                                                <a title="New Arrivals" href="#" class="teamo-item-title">New Arrivals</a>-->
-<!--                                            </li>-->
-<!--                                            <li class="menu-item">-->
-<!--                                                <a title="Accessories" href="#" class="teamo-item-title">Accessories</a>-->
-<!--                                            </li>-->
-<!--                                            <li class="menu-item">-->
-<!--                                                <a title="Storage" href="#" class="teamo-item-title">Storage</a>-->
-<!--                                            </li>-->
-<!--                                        </ul>-->
-<!--                                    </li>-->
-<!--                                    <li class="menu-item">-->
-<!--                                        <a title="Cacti" href="#" class="teamo-menu-item-title">Cacti</a>-->
-<!--                                    </li>-->
-<!--                                    <li class="menu-item">-->
-<!--                                        <a title="Palms" href="#" class="teamo-menu-item-title">Palms</a>-->
-<!--                                    </li>-->
-<!--                                    <li class="menu-item">-->
-<!--                                        <a title="Ferns" href="#" class="teamo-menu-item-title">Ferns</a>-->
-<!--                                    </li>-->
-<!--                                    <li class="menu-item">-->
-<!--                                        <a title="Hanging plants" href="#" class="teamo-menu-item-title">Hanging plants</a>-->
-<!--                                    </li>-->
-<!--                                    <li class="menu-item">-->
-<!--                                        <a title="Variegated" href="#" class="teamo-menu-item-title">Variegated</a>-->
-<!--                                    </li>-->
                                 </ul>
                             </div>
                         </div>
@@ -334,44 +360,13 @@
 <!--                                            </div>-->
 <!--                                        </div>-->
 <!--                                    </li>-->
-<!--                                    <li class="menu-item  menu-item-has-children">-->
-<!--                                        <a href="inblog_right-siderbar.html" class="teamo-menu-item-title" title="Blogs">Blogs</a>-->
-<!--                                        <span class="toggle-submenu"></span>-->
-<!--                                        <ul class="submenu">-->
-<!--                                            <li class="menu-item menu-item-has-children">-->
-<!--                                                <a href="#" class="teamo-menu-item-title" title="Blog Style">Blog Style</a>-->
-<!--                                                <span class="toggle-submenu"></span>-->
-<!--                                                <ul class="submenu">-->
-<!--                                                    <li class="menu-item">-->
-<!--                                                        <a href="bloggrid.html">Grid</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li class="menu-item">-->
-<!--                                                        <a href="bloglist.html">List</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li class="menu-item">-->
-<!--                                                        <a href="bloglist-leftsidebar.html">List Sidebar</a>-->
-<!--                                                    </li>-->
-<!--                                                </ul>-->
-<!--                                            </li>-->
-<!--                                            <li class="menu-item menu-item-has-children">-->
-<!--                                                <a href="#" class="teamo-menu-item-title" title="Post Layout">Post Layout</a>-->
-<!--                                                <span class="toggle-submenu"></span>-->
-<!--                                                <ul class="submenu">-->
-<!--                                                    <li class="menu-item">-->
-<!--                                                        <a href="inblog_left-siderbar.html">Left Sidebar</a>-->
-<!--                                                    </li>-->
-<!--                                                    <li class="menu-item">-->
-<!--                                                        <a href="inblog_right-siderbar.html">Right Sidebar</a>-->
-<!--                                                    </li>-->
-<!--                                                </ul>-->
-<!--                                            </li>-->
-<!--                                        </ul>-->
-<!--                                    </li>-->
                                     <li class="menu-item">
                                         <inertia-link :href="route('contact')" class="teamo-menu-item-title" title="About">Contacts</inertia-link>
                                     </li>
                                     <li class="menu-item">
-                                        <inertia-link :href="route('about')" class="teamo-menu-item-title" title="About">About</inertia-link>
+                                        <inertia-link :href="route('about')" class="teamo-menu-item-title"
+                                                      title="About">About
+                                        </inertia-link>
                                     </li>
                                 </ul>
                             </div>
@@ -380,6 +375,70 @@
                 </div>
             </div>
         </header>
+        <div class="header-device-mobile">
+            <div class="wapper">
+                <div class="item mobile-logo">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/images/logo.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+                <div class="item item mobile-search-box has-sub">
+                    <a href="#">
+						<span class="icon">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</span>
+                    </a>
+                    <div class="block-sub">
+                        <a href="#" class="close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </a>
+                        <div class="header-searchform-box">
+                            <form class="header-searchform">
+                                <div class="searchform-wrap">
+                                    <input type="text" class="search-input" placeholder="Enter keywords to search...">
+                                    <input type="submit" class="submit button" value="Search">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="item mobile-settings-box has-sub">
+                    <a href="#">
+						<span class="icon">
+							<i class="fa fa-cog" aria-hidden="true"></i>
+						</span>
+                    </a>
+                    <div class="block-sub">
+                        <a href="#" class="close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </a>
+                        <div class="block-sub-item">
+                            <h5 class="block-item-title">Currency</h5>
+                            <form class="currency-form teamo-language">
+                                <ul class="teamo-language-wrap">
+                                    <li class="active">
+                                        <a href="#">
+											<span>
+												Vietnamese (VNĐ)
+											</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="item menu-bar">
+                    <a class=" mobile-navigation  menu-toggle" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <slot></slot>
     </div>
 </template>
@@ -391,22 +450,49 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .top-bar-left{
-        a:hover{
-            color: #fff;
-        }
-        .facebook,.email{
-            white-space: nowrap;
-            max-width: 150px;
-            display: inline-block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .facebook{
-            margin-right: 1.3rem;
-        }
-        .email{
-            max-width: 250px;
-        }
+.top-bar-left {
+    a:hover {
+        color: #fff;
     }
+
+    .facebook, .email {
+        white-space: nowrap;
+        max-width: 150px;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .facebook {
+        margin-right: 1.3rem;
+    }
+
+    .email {
+        max-width: 250px;
+    }
+}
+
+.form-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    background-origin: border-box;
+    user-select: none;
+    flex-shrink: unset;
+    height: auto;
+    width: auto;
+    color: unset;
+    background-color: transparent;
+    border: unset;
+    border-radius: unset;
+}
+
+.wishlist-icon:before {
+    content: "\f08a";
+    font-family: FontAwesome;
+    font-size: 26px;
+    font-weight: normal;
+    position: relative;
+    top: -5px;
+}
+
 </style>

@@ -25,6 +25,12 @@ Vue.mixin({
                 preserveState: true,
                 preserveScroll: true
             })
+        },
+        addToWishlist(id){
+            this.$inertia.post('/cart/add-wishlist', {product: id}, {
+                preserveState: true,
+                preserveScroll: true
+            })
         }
     }
 })

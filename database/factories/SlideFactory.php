@@ -29,13 +29,13 @@ class SlideFactory extends Factory
         $code=Ticket::all()->random();
         $price=$code->type=='percent'?$product->price*((100-$code->value)/100):$product->price-$code->value;
         return [
-            'image'=>$product->poster,
-            'link'=>route('product.show',$product->id),
-            'title_small'=>\Arr::random(['Tiêu đề random 1', 'tiêu đề random 2','tiêu đề random 3']),
-            'title_big'=>\Arr::random(['Tiêu đề big 1', 'tiêu đề big 2','tiêu đề big 3']),
+            'image'=>'https://picsum.photos/77'.rand(0,3).'/61'.rand(0,1),
+            'link'=>route('product.show',$product->slug),
+            'title_small'=>'Tiêu đề nhỏ '.rand(1,99),
+            'title_big'=>'Tiêu đề lớn '.rand(1,99),
             'type'=>$type,
             'key'=>$type=='code'?'Mã giảm giá':'Chỉ còn',
-            'value'=>$type=='code'?$code->name:$price,
+            'value'=>$type=='code'?$code->name:ceil($price),
             'status'=>rand(0,1)
         ];
     }

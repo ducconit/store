@@ -123,7 +123,7 @@
                 <div class="footer-device-mobile-item device-home device-wishlist">
                     <a href="#">
 					<span class="icon">
-						<i class="fa fa-heart" aria-hidden="true"></i>
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
 					</span>
                         Wishlist
                     </a>

@@ -20,28 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e201cf2-9376-4592-87bf-af11e51a60d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Wishlist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SlideFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SlideFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/frontend-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/frontend-plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Product/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Product/Show.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Footer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Header.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/ItemProduct.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ItemProduct.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ProductTab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ProductTab.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SliderBanner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SliderBanner.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weather/resources/views/pages/center/ban-do-mang-luoi-tram/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../weather/resources/views/pages/center/ban-do-mang-luoi-tram/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weather/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../weather/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +56,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../weather" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
-    <dismissed value="$PROJECT_DIR$/../taskmanager/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -250,7 +241,8 @@
       <workItem from="1603377122106" duration="930000" />
       <workItem from="1603381310778" duration="1256000" />
       <workItem from="1603675713192" duration="31225000" />
-      <workItem from="1603761574439" duration="26916000" />
+      <workItem from="1603761574439" duration="27386000" />
+      <workItem from="1603847919602" duration="11704000" />
     </task>
     <servers />
   </component>
@@ -274,10 +266,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603710454019" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603708982871">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603852075761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603708982871" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603852075761" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603709035687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -330,10 +322,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603764819871" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603787804533">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603858609879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603787804533" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603858609879" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,12 +337,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/Header.vue</url>
-          <line>336</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/resources/js/components/Header.vue</url>
-          <line>284</line>
+          <line>310</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -366,19 +353,16 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/ProductTab.vue</url>
           <line>17</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/ProductTab.vue</url>
           <line>24</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/ProductTab.vue</url>
           <line>28</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

@@ -21,6 +21,9 @@ class Cart
         Inertia::share('carts',Shopping::content()->values());
         Inertia::share('priceTotal',Shopping::priceTotal());
         Inertia::share('cartCount',Shopping::count());
+
+        Inertia::share('wishlistCount',Shopping::instance('wishlist')->count());
+        Inertia::share('wishlists',Shopping::instance('wishlist')->content()->values());
         return $next($request);
     }
 }
