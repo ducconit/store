@@ -18,5 +18,6 @@
     <orderEntry type="module" module-name="to-do-list" />
     <orderEntry type="module" module-name="weather" />
     <orderEntry type="module" module-name="laravel7" />
+    <orderEntry type="module" module-name="weather-web" />
   </component>
 </module>
